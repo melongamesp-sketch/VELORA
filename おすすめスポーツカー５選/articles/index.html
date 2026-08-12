@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>コスパ最強のスポーツカー5選｜維持費まで考えて選ぶVELORA</title>
+
+<meta name="description" content="購入価格だけでは決まらない。本当のコスパを「購入費＋維持費＋走る楽しさ＋実用性」で評価。GR86/BRZ、スイフトスポーツ、CR-Z、ロードスター、S660を徹底比較。">
+
+<style>
+
+/* =========================================================
+   VELORA SPORTS CAR
+   Luxury × Sport
+   ========================================================= */
+
+:root {
+    --bg: #070809;
+    --bg-soft: #0d1013;
+    --card: #111519;
+    --card-light: #171c21;
+    --line: rgba(255,255,255,0.10);
+    --text: #f4f4f4;
+    --muted: #a7adb4;
+    --gold: #c9a86a;
+    --gold-light: #e1c58d;
+    --red: #d84a4a;
+    --green: #65c18c;
+    --shadow: 0 20px 60px rgba(0,0,0,0.45);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(201,168,106,0.08), transparent 30%),
+        var(--bg);
+    color: var(--text);
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        "Hiragino Kaku Gothic ProN",
+        "Yu Gothic",
+        Meiryo,
+        sans-serif;
+    line-height: 1.8;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(1120px, calc(100% - 36px));
+    margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(7,8,9,0.86);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.22em;
+}
+
+.logo span {
+    color: var(--gold);
+}
+
+.header-label {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--line);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(7,8,9,0.98) 0%,
+            rgba(7,8,9,0.82) 42%,
+            rgba(7,8,9,0.35) 100%
+        ),
+        radial-gradient(
+            circle at 75% 45%,
+            rgba(201,168,106,0.16),
+            transparent 30%
+        );
+    pointer-events: none;
+}
+
+.hero::after {
+    content: "VELORA";
+    position: absolute;
+    right: -30px;
+    bottom: -40px;
+    font-size: clamp(100px, 18vw, 240px);
+    font-weight: 900;
+    letter-spacing: -0.06em;
+    color: rgba(255,255,255,0.025);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 100px 0;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--gold-light);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.eyebrow::before {
+    content: "";
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+}
+
+.hero h1 {
+    max-width: 780px;
+    margin: 24px 0 20px;
+    font-size: clamp(42px, 7vw, 78px);
+    line-height: 1.08;
+    letter-spacing: -0.045em;
+}
+
+.hero h1 strong {
+    color: var(--gold-light);
+}
+
+.hero-lead {
+    max-width: 650px;
+    margin: 0;
+    color: #c8ccd0;
+    font-size: clamp(15px, 2vw, 19px);
+}
+
+.hero-note {
+    margin-top: 28px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.intro {
+    padding: 80px 0 40px;
+}
+
+.section-label {
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.intro h2 {
+    margin: 12px 0;
+    font-size: clamp(28px, 4vw, 44px);
+    line-height: 1.25;
+}
+
+.intro p {
+    max-width: 760px;
+    color: var(--muted);
+}
+
+/* =========================================================
+   QUICK TABLE
+   ========================================================= */
+
+.quick {
+    padding: 30px 0 100px;
+}
+
+.quick-table {
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: rgba(255,255,255,0.02);
+    box-shadow: var(--shadow);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 760px;
+}
+
+th,
+td {
+    padding: 17px 18px;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    font-size: 13px;
+}
+
+th {
+    color: var(--gold-light);
+    background: rgba(201,168,106,0.05);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.rank {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--gold);
+}
+
+.car-name {
+    font-weight: 800;
+}
+
+.score {
+    color: var(--gold-light);
+    font-weight: 800;
+}
+
+/* =========================================================
+   CAR SECTION
+   ========================================================= */
+
+.car {
+    padding: 110px 0;
+    border-top: 1px solid var(--line);
+}
+
+.car-number {
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+}
+
+.car-title {
+    margin: 10px 0 8px;
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+}
+
+.car-subtitle {
+    margin: 0 0 30px;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.car-intro {
+    max-width: 760px;
+    color: #c9cdd1;
+}
+
+/* =========================================================
+   SPEC CARD
+   ========================================================= */
+
+.spec-card {
+    margin-top: 38px;
+    padding: 28px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(201,168,106,0.07),
+            rgba(255,255,255,0.02)
+        );
+}
+
+.spec-title {
+    margin-bottom: 18px;
+    color: var(--gold-light);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+}
+
+.spec-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+}
+
+.spec-item {
+    padding: 16px;
+    background: var(--card);
+}
+
+.spec-item small {
+    display: block;
+    color: var(--muted);
+    font-size: 11px;
+    margin-bottom: 3px;
+}
+
+.spec-item strong {
+    font-size: 15px;
+}
+
+/* =========================================================
+   CONCLUSION
+   ========================================================= */
+
+.verdict {
+    margin: 35px 0;
+    padding: 25px 28px;
+    border-left: 3px solid var(--gold);
+    background: rgba(201,168,106,0.06);
+}
+
+.verdict strong {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--gold-light);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+}
+
+/* =========================================================
+   SCORE GRID
+   ========================================================= */
+
+.score-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.score-box {
+    padding: 17px 18px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+}
+
+.score-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.score-name {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.score-number {
+    color: var(--gold-light);
+    font-weight: 900;
+}
+
+.bar {
+    height: 5px;
+    overflow: hidden;
+    background: #252a2f;
+    border-radius: 999px;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #8d6e38, #e1c58d);
+    border-radius: inherit;
+}
+
+/* =========================================================
+   CONTENT GRID
+   ========================================================= */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.info-card {
+    padding: 25px;
+    border: 1px solid var(--line);
+    border-radius: 17px;
+    background: var(--card);
+}
+
+.info-card h3 {
+    margin: 0 0 14px;
+    font-size: 17px;
+}
+
+.info-card p {
+    margin: 0;
+    color: #bfc4c9;
+    font-size: 14px;
+}
+
+.info-card ul {
+    margin: 0;
+    padding-left: 18px;
+    color: #bfc4c9;
+    font-size: 14px;
+}
+
+.pro::before {
+    content: "＋";
+    color: var(--green);
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+.con::before {
+    content: "−";
+    color: var(--red);
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+/* =========================================================
+   PRACTICALITY
+   ========================================================= */
+
+.rating-row {
+    display: grid;
+    grid-template-columns: 130px 1fr 60px;
+    align-items: center;
+    gap: 15px;
+    margin: 14px 0;
+}
+
+.rating-label {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.rating-bar {
+    height: 8px;
+    background: #24292e;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.rating-bar span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #7b5c2b, #e1c58d);
+}
+
+.rating-value {
+    color: var(--gold-light);
+    font-weight: 900;
+    text-align: right;
+}
+
+/* =========================================================
+   MAINTENANCE
+   ========================================================= */
+
+.maintenance {
+    margin-top: 30px;
+    padding: 28px;
+    border: 1px solid rgba(201,168,106,0.25);
+    border-radius: 18px;
+    background: rgba(201,168,106,0.04);
+}
+
+.maintenance h3 {
+    margin-top: 0;
+}
+
+.cost {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--gold-light);
+}
+
+/* =========================================================
+   CUSTOM
+   ========================================================= */
+
+.custom-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.custom-item {
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--card);
+}
+
+.custom-item strong {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.custom-item span {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* =========================================================
+   BUYER CHECK
+   ========================================================= */
+
+.checklist {
+    padding: 100px 0;
+    border-top: 1px solid var(--line);
+}
+
+.check-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.check-item {
+    padding: 17px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--card);
+    color: #c9cdd1;
+}
+
+.check-item::before {
+    content: "✓";
+    margin-right: 10px;
+    color: var(--gold);
+    font-weight: 900;
+}
+
+/* =========================================================
+   FINAL
+   ========================================================= */
+
+.final {
+    padding: 110px 0;
+    border-top: 1px solid var(--line);
+}
+
+.final-box {
+    padding: 50px;
+    border: 1px solid rgba(201,168,106,0.3);
+    border-radius: 24px;
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(201,168,106,0.10),
+            transparent 35%
+        ),
+        var(--card);
+    text-align: center;
+}
+
+.final-box h2 {
+    margin: 10px 0 18px;
+    font-size: clamp(30px, 5vw, 52px);
+}
+
+.final-box p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--muted);
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    padding: 40px 0;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    .container {
+        width: min(100% - 24px, 1120px);
+    }
+
+    .hero {
+        min-height: 560px;
+    }
+
+    .hero-content {
+        padding: 80px 0;
+    }
+
+    .header-label {
+        display: none;
+    }
+
+    .spec-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content-grid,
+    .score-grid,
+    .check-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .custom-list {
+        grid-template-columns: 1fr;
+    }
+
+    .rating-row {
+        grid-template-columns: 95px 1fr 48px;
+        gap: 9px;
+    }
+
+    .car {
+        padding: 80px 0;
+    }
+
+    .final-box {
+        padding: 32px 20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container header-inner">
+        <a href="../index.html" class="logo">
+            VELO<span>R</span>A
+        </a>
+        <div class="header-label">
+            AUTOMOTIVE MEDIA
+        </div>
+    </div>
+</header>
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <div class="eyebrow">
+            VELORA SELECTION
+        </div>
+
+        <h1>
+            コスパ最強の<br>
+            <strong>スポーツカー5選</strong>
+        </h1>
+
+        <p class="hero-lead">
+            安いだけが「コスパ」じゃない。<br>
+            購入費・維持費・走る楽しさ・実用性まで含めて、
+            「払ったお金に対してどれだけ楽しめるか」をVELORA独自の視点で評価。
+        </p>
+
+        <p class="hero-note">
+            ※評価はVELORA独自基準による編集部評価です。
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     INTRO
+     ========================================================= -->
+
+<section class="intro">
+
+    <div class="container">
+
+        <div class="section-label">
+            WHAT IS COST PERFORMANCE?
+        </div>
+
+        <h2>
+            「安い車」ではなく、<br>
+            「満足度の高い車」を選ぶ。
+        </h2>
+
+        <p>
+            VELORAでは、コスパを車両価格だけでは判断しません。
+            購入費、税金、燃料、保険、車検、消耗品、故障リスクなどの
+            維持費まで考慮し、それに対して走行性能・実用性・楽しさ・所有満足度が
+            どれだけ得られるかを総合的に評価します。
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK COMPARISON
+     ========================================================= -->
+
+<section class="quick">
+
+    <div class="container">
+
+        <div class="section-label">
+            QUICK COMPARISON
+        </div>
+
+        <h2>5台を一気に比較</h2>
+
+        <div class="quick-table">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>車種</th>
+                        <th>スポーツ</th>
+                        <th>実用性</th>
+                        <th>快適性</th>
+                        <th>維持しやすさ</th>
+                        <th>コスパ</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td class="rank">01</td>
+                        <td class="car-name">GR86 / BRZ</td>
+                        <td>95</td>
+                        <td>70</td>
+                        <td>68</td>
+                        <td>78</td>
+                        <td class="score">94</td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">02</td>
+                        <td class="car-name">スイフトスポーツ</td>
+                        <td>84</td>
+                        <td>92</td>
+                        <td>78</td>
+                        <td>92</td>
+                        <td class="score">98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">03</td>
+                        <td class="car-name">Honda CR-Z</td>
+                        <td>78</td>
+                        <td>82</td>
+                        <td>72</td>
+                        <td>76</td>
+                        <td class="score">91</td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">04</td>
+                        <td class="car-name">ロードスター</td>
+                        <td>96</td>
+                        <td>45</td>
+                        <td>62</td>
+                        <td>86</td>
+                        <td class="score">95</td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">05</td>
+                        <td class="car-name">S660</td>
+                        <td>91</td>
+                        <td>30</td>
+                        <td>55</td>
+                        <td>89</td>
+                        <td class="score">90</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     01 GR86 / BRZ
+     ========================================================= -->
+
+<section class="car">
+
+<div class="container">
+
+    <div class="car-number">01 / TOYOTA × SUBARU</div>
+
+    <h2 class="car-title">GR86 / BRZ</h2>
+
+    <p class="car-subtitle">
+        「初めての本格FR」に強い、万能型スポーツカー。
+    </p>
+
+    <p class="car-intro">
+        GR86とBRZは、2.4L水平対向4気筒を搭載するFRスポーツ。
+        走りを楽しめる一方、4人乗車と一定の荷室を持ち、
+        趣味と日常を両立しやすいのが大きな魅力。
+    </p>
+
+    <div class="spec-card">
+
+        <div class="spec-title">SPEC</div>
+
+        <div class="spec-grid">
+
+            <div class="spec-item">
+                <small>ENGINE</small>
+                <strong>2.4L 水平対向4気筒</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>POWER</small>
+                <strong>235 PS</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TORQUE</small>
+                <strong>250 N・m</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>DRIVE</small>
+                <strong>FR</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>SEATS</small>
+                <strong>4名</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>BODY</small>
+                <strong>4,265 × 1,775 × 1,310 mm</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="verdict">
+        <strong>VELORA'S CONCLUSION</strong>
+        本格FRを楽しみながら、1台で日常生活までこなしたい人におすすめ。
+    </div>
+
+    <div class="score-grid">
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">スポーツ性能</span>
+                <span class="score-number">95</span>
+            </div>
+            <div class="bar"><span style="width:95%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">実用性</span>
+                <span class="score-number">70</span>
+            </div>
+            <div class="bar"><span style="width:70%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">快適性</span>
+                <span class="score-number">68</span>
+            </div>
+            <div class="bar"><span style="width:68%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">コスパ</span>
+                <span class="score-number">94</span>
+            </div>
+            <div class="bar"><span style="width:94%"></span></div>
+        </div>
+
+    </div>
+
+    <div class="content-grid">
+
+        <div class="info-card">
+            <h3>メリット</h3>
+            <p class="pro">本格的なFRスポーツを楽しめる</p>
+            <p class="pro">4人乗りで日常使用にも対応</p>
+            <p class="pro">カスタムパーツが非常に豊富</p>
+        </div>
+
+        <div class="info-card">
+            <h3>デメリット</h3>
+            <p class="con">後席は大人が長時間乗るには狭い</p>
+            <p class="con">ハイオク指定で燃料コストは軽量車より高め</p>
+            <p class="con">最低地上高が低く段差には注意</p>
+        </div>
+
+        <div class="info-card">
+            <h3>人気の層</h3>
+            <p>
+                初めてのFRスポーツを探している人、
+                カスタムを楽しみたい人、通勤と休日の走りを
+                1台で両立したい人。
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>買って後悔しやすい人</h3>
+            <p>
+                後席の広さや燃費を最優先する人。
+                「スポーツカーらしい不便さ」を許容できるかがポイント。
+            </p>
+        </div>
+
+    </div>
+
+    <div class="maintenance">
+        <h3>🔧 注意点・中古車チェック</h3>
+        <p>
+            改造内容、サーキット走行歴、クラッチ・ブレーキ・タイヤ、
+            下回り、整備記録を重点的に確認。
+            特に「安いから」という理由だけで車両を選ばないこと。
+        </p>
+    </div>
+
+    <h3 style="margin-top:40px;">🛠 おすすめカスタム</h3>
+
+    <div class="custom-list">
+
+        <div class="custom-item">
+            <strong>① タイヤ</strong>
+            <span>走りの基礎。まずはグリップとバランスを重視。</span>
+        </div>
+
+        <div class="custom-item">
+            <strong>② ブレーキ</strong>
+            <span>スポーツ走行をするならパッド・フルードから。</span>
+        </div>
+
+        <div class="custom-item">
+            <strong>③ 足回り</strong>
+            <span>車高よりも乗り味とバランスを優先。</span>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     02 SWIFT SPORT
+     ========================================================= -->
+
+<section class="car">
+
+<div class="container">
+
+    <div class="car-number">02 / SUZUKI</div>
+
+    <h2 class="car-title">SWIFT SPORT</h2>
+
+    <p class="car-subtitle">
+        「普段使いできるスポーツカー」の代表格。
+    </p>
+
+    <p class="car-intro">
+        1.4L直噴ターボを搭載し、軽量ボディと組み合わせた
+        スイフトスポーツ。燃費・税金・タイヤなどの負担を
+        比較的抑えながら、スポーツドライビングも楽しめる。
+    </p>
+
+    <div class="spec-card">
+
+        <div class="spec-title">SPEC</div>
+
+        <div class="spec-grid">
+
+            <div class="spec-item">
+                <small>ENGINE</small>
+                <strong>1.4L 直噴ターボ</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>POWER</small>
+                <strong>140 PS</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>DRIVE</small>
+                <strong>FF</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TRANSMISSION</small>
+                <strong>6MT / 6AT</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>SEATS</small>
+                <strong>5名</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WLTC</small>
+                <strong>17.6 km/L（6MT）</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="verdict">
+        <strong>VELORA'S CONCLUSION</strong>
+        「スポーツカーが欲しい。でも普段の生活も犠牲にしたくない」なら最有力。
+    </div>
+
+    <div class="score-grid">
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">スポーツ性能</span>
+                <span class="score-number">84</span>
+            </div>
+            <div class="bar"><span style="width:84%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">実用性</span>
+                <span class="score-number">92</span>
+            </div>
+            <div class="bar"><span style="width:92%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">維持しやすさ</span>
+                <span class="score-number">92</span>
+            </div>
+            <div class="bar"><span style="width:92%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">コスパ</span>
+                <span class="score-number">98</span>
+            </div>
+            <div class="bar"><span style="width:98%"></span></div>
+        </div>
+
+    </div>
+
+    <div class="content-grid">
+
+        <div class="info-card">
+            <h3>メリット</h3>
+            <p class="pro">5人乗りで日常使用が非常に楽</p>
+            <p class="pro">燃費と走りのバランスが良い</p>
+            <p class="pro">カスタムパーツが豊富</p>
+        </div>
+
+        <div class="info-card">
+            <h3>デメリット</h3>
+            <p class="con">FRではなくFF</p>
+            <p class="con">絶対的なパワーは大排気量スポーツに及ばない</p>
+            <p class="con">2025年に標準車の生産終了</p>
+        </div>
+
+        <div class="info-card">
+            <h3>人気の層</h3>
+            <p>
+                通勤・通学と休日のドライブを両立したい人。
+                初めてスポーツ系の車を購入する人にも向く。
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>買って後悔しやすい人</h3>
+            <p>
+                FRならではの挙動や大排気量エンジンの迫力を
+                最優先する人には物足りない可能性がある。
+            </p>
+        </div>
+
+    </div>
+
+    <div class="maintenance">
+        <h3>💰 維持費の強さ</h3>
+        <p>
+            1.4Lエンジン、比較的軽量な車体、17.6km/L（6MT）の
+            WLTC燃費など、日常のランニングコストを抑えやすいのが魅力。
+            ただし中古車では整備履歴・クラッチ・ターボ周辺などを確認したい。
+        </p>
+    </div>
+
+    <h3 style="margin-top:40px;">🛠 おすすめカスタム</h3>
+
+    <div class="custom-list">
+
+        <div class="custom-item">
+            <strong>① タイヤ</strong>
+            <span>純正のバランスを崩さずグリップを強化。</span>
+        </div>
+
+        <div class="custom-item">
+            <strong>② ブレーキ</strong>
+            <span>パッド・フルードを優先。</span>
+        </div>
+
+        <div class="custom-item">
+            <strong>③ 吸排気</strong>
+            <span>音量だけでなくレスポンスと合法性を重視。</span>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     03 CR-Z
+     ========================================================= -->
+
+<section class="car">
+
+<div class="container">
+
+    <div class="car-number">03 / HONDA</div>
+
+    <h2 class="car-title">CR-Z</h2>
+
+    <p class="car-subtitle">
+        ハイブリッドなのに、ちゃんとスポーツ。
+    </p>
+
+    <p class="car-intro">
+        1.5L i-VTEC＋IMAを搭載した4人乗りのスポーツハイブリッド。
+        現在は中古車のみだが、燃費とスポーティなデザイン、
+        6MT設定という個性が魅力。
+    </p>
+
+    <div class="spec-card">
+
+        <div class="spec-title">SPEC</div>
+
+        <div class="spec-grid">
+
+            <div class="spec-item">
+                <small>ENGINE</small>
+                <strong>1.5L i-VTEC＋IMA</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>DRIVE</small>
+                <strong>FF</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TRANSMISSION</small>
+                <strong>6MT / CVT</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>SEATS</small>
+                <strong>4名</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>BODY</small>
+                <strong>約4,105 × 1,740 × 1,395 mm</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>STATUS</small>
+                <strong>生産終了・中古車のみ</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="verdict">
+        <strong>VELORA'S CONCLUSION</strong>
+        「燃費も欲しい。でも普通のコンパクトカーではつまらない」という人に面白い選択肢。
+    </div>
+
+    <div class="score-grid">
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">スポーツ性能</span>
+                <span class="score-number">78</span>
+            </div>
+            <div class="bar"><span style="width:78%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">実用性</span>
+                <span class="score-number">82</span>
+            </div>
+            <div class="bar"><span style="width:82%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">維持しやすさ</span>
+                <span class="score-number">76</span>
+            </div>
+            <div class="bar"><span style="width:76%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">コスパ</span>
+                <span class="score-number">91</span>
+            </div>
+            <div class="bar"><span style="width:91%"></span></div>
+        </div>
+
+    </div>
+
+    <div class="content-grid">
+
+        <div class="info-card">
+            <h3>メリット</h3>
+            <p class="pro">ハイブリッドによる燃費性能</p>
+            <p class="pro">4人乗りで実用性が高い</p>
+            <p class="pro">6MTという希少性</p>
+        </div>
+
+        <div class="info-card">
+            <h3>デメリット</h3>
+            <p class="con">年式が古くなっている</p>
+            <p class="con">ハイブリッド関連部品の状態確認が重要</p>
+            <p class="con">絶対的な走行性能は現代のFRスポーツに及ばない</p>
+        </div>
+
+        <div class="info-card">
+            <h3>人気の層</h3>
+            <p>
+                人とは少し違う車に乗りたい人、
+                燃費とスポーツ感を両立したい人、
+                中古車をベースに楽しみたい人。
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>買って後悔しやすい人</h3>
+            <p>
+                最新の安全装備や最新世代のスポーツ性能を
+                最優先する人には向きにくい。
+            </p>
+        </div>
+
+    </div>
+
+    <div class="maintenance">
+        <h3>🔧 中古車で最重要</h3>
+        <p>
+            年式が古いため、価格だけでなく整備履歴を重視。
+            ハイブリッドシステム、12Vバッテリー、足回り、
+            ゴム部品などの経年劣化を確認したい。
+        </p>
+    </div>
+
+    <h3 style="margin-top:40px;">🛠 おすすめカスタム</h3>
+
+    <div class="custom-list">
+
+        <div class="custom-item">
+            <strong>① タイヤ</strong>
+            <span>走りと安全性を両立する最優先項目。</span>
+        </div>
+
+        <div class="custom-item">
+            <strong>② 足回り</strong>
+            <span>古い車体ほど状態確認を優先。</span>
+        </div>
+
+        <div class="custom-item">
+            <strong>③ 補強・シート</strong>
+            <span>運転姿勢とボディ感覚を整える。</span>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     04 ROADSTER
+     ========================================================= -->
+
+<section class="car">
+
+<div class="container">
+
+    <div class="car-number">04 / MAZDA</div>
+
+    <h2 class="car-title">ROADSTER</h2>
+
+    <p class="car-subtitle">
+        「運転する楽しさ」を最優先するなら、強烈な存在感。
+    </p>
+
+    <p class="car-intro">
+        軽量・FR・2シーターという、スポーツカーの基本を
+        シンプルに楽しめるロードスター。
+        実用性では不利だが、運転そのものの満足度は非常に高い。
+    </p>
+
+    <div class="spec-card">
+
+        <div class="spec-title">SPEC / 現行ROADSTER</div>
+
+        <div class="spec-grid">
+
+            <div class="spec-item">
+                <small>ENGINE</small>
+                <strong>1.5L SKYACTIV-G</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>DRIVE</small>
+                <strong>FR</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>SEATS</small>
+                <strong>2名</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>BODY</small>
+                <strong>3,915 × 1,735 × 1,235 mm</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WLTC</small>
+                <strong>16.9〜17.3 km/L</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>NEW PRICE</small>
+                <strong>295.9万円〜</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="verdict">
+        <strong>VELORA'S CONCLUSION</strong>
+        実用性より「運転する楽しさ」を優先できるなら、コスパは非常に高い。
+    </div>
+
+    <div class="score-grid">
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">スポーツ性能</span>
+                <span class="score-number">96</span>
+            </div>
+            <div class="bar"><span style="width:96%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">実用性</span>
+                <span class="score-number">45</span>
+            </div>
+            <div class="bar"><span style="width:45%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">快適性</span>
+                <span class="score-number">62</span>
+            </div>
+            <div class="bar"><span style="width:62%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">コスパ</span>
+                <span class="score-number">95</span>
+            </div>
+            <div class="bar"><span style="width:95%"></span></div>
+        </div>
+
+    </div>
+
+    <div class="content-grid">
+
+        <div class="info-card">
+            <h3>メリット</h3>
+            <p class="pro">軽快なFRハンドリング</p>
+            <p class="pro">燃費とスポーツ性のバランス</p>
+            <p class="pro">オープンエアを楽しめる</p>
+        </div>
+
+        <div class="info-card">
+            <h3>デメリット</h3>
+            <p class="con">2人乗り</p>
+            <p class="con">荷物を多く載せるのは苦手</p>
+            <p class="con">長距離では人によって快適性に差が出る</p>
+        </div>
+
+        <div class="info-card">
+            <h3>人気の層</h3>
+            <p>
+                車を「移動手段」ではなく「趣味」として楽しみたい人。
+                ワインディングやオープンドライブが好きな人。
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>買って後悔しやすい人</h3>
+            <p>
+                大きな荷物を頻繁に運ぶ人や、
+                4人以上で乗ることが多い人。
+            </p>
+        </div>
+
+    </div>
+
+    <div class="maintenance">
+        <h3>🔧 注意点</h3>
+        <p>
+            幌・ウェザーストリップなどオープンカー特有の部品、
+            下回り、足回り、クラッチなどを中古車では確認。
+            現行車ならグレードによる装備差にも注意。
+        </p>
+    </div>
+
+    <h3 style="margin-top:40px;">🛠 おすすめカスタム</h3>
+
+    <div class="custom-list">
+
+        <div class="custom-item">
+            <strong>① タイヤ</strong>
+            <span>ロードスターの良さを壊さないことが最優先。</span>
+        </div>
+
+        <div class="custom-item">
+            <strong>② ブレーキ</strong>
+            <span>スポーツ走行をするならパッドから。</span>
+        </div>
+
+        <div class="custom-item">
+            <strong>③ 足回り</strong>
+            <span>車高よりも乗り味とボディバランスを重視。</span>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     05 S660
+     ========================================================= -->
+
+<section class="car">
+
+<div class="container">
+
+    <div class="car-number">05 / HONDA</div>
+
+    <h2 class="car-title">S660</h2>
+
+    <p class="car-subtitle">
+        実用性を捨ててでも、走りを選ぶ人へ。
+    </p>
+
+    <p class="car-intro">
+        0.66Lターボ、MR、2シーターという非常に個性的な軽スポーツ。
+        2022年に生産終了したため現在は中古車が中心。
+        軽自動車ならではの維持費の軽さも魅力。
+    </p>
+
+    <div class="spec-card">
+
+        <div class="spec-title">SPEC</div>
+
+        <div class="spec-grid">
+
+            <div class="spec-item">
+                <small>ENGINE</small>
+                <strong>0.66L ターボ</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>POWER</small>
+                <strong>64 PS</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TORQUE</small>
+                <strong>104 N・m</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>DRIVE</small>
+                <strong>MR</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>SEATS</small>
+                <strong>2名</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WLTC</small>
+                <strong>20.0〜20.6 km/L</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="verdict">
+        <strong>VELORA'S CONCLUSION</strong>
+        実用性より「唯一無二の楽しさ」を選ぶなら、今でも魅力的。
+    </div>
+
+    <div class="score-grid">
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">スポーツ性能</span>
+                <span class="score-number">91</span>
+            </div>
+            <div class="bar"><span style="width:91%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">実用性</span>
+                <span class="score-number">30</span>
+            </div>
+            <div class="bar"><span style="width:30%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">維持しやすさ</span>
+                <span class="score-number">89</span>
+            </div>
+            <div class="bar"><span style="width:89%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">コスパ</span>
+                <span class="score-number">90</span>
+            </div>
+            <div class="bar"><span style="width:90%"></span></div>
+        </div>
+
+    </div>
+
+    <div class="content-grid">
+
+        <div class="info-card">
+            <h3>メリット</h3>
+            <p class="pro">軽自動車なので維持費を抑えやすい</p>
+            <p class="pro">MR＋2シーターという独自性</p>
+            <p class="pro">小さなボディによる軽快さ</p>
+        </div>
+
+        <div class="info-card">
+            <h3>デメリット</h3>
+            <p class="con">2人乗り</p>
+            <p class="con">荷物をほとんど載せられない</p>
+            <p class="con">長距離・高速道路では快適性に限界</p>
+        </div>
+
+        <div class="info-card">
+            <h3>人気の層</h3>
+            <p>
+                2台目の趣味車を探している人、
+                軽スポーツが好きな人、
+                小さな車で運転を楽しみたい人。
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>買って後悔しやすい人</h3>
+            <p>
+                1台で買い物・旅行・家族移動まで
+                すべてこなしたい人。
+            </p>
+        </div>
+
+    </div>
+
+    <div class="maintenance">
+        <h3>🔧 中古車で見るポイント</h3>
+        <p>
+            走行距離だけで判断せず、オイル交換などの整備履歴、
+            ターボ周辺、足回り、幌、ボディ下部などを確認。
+            生産終了車なので状態の良い個体を探すことが重要。
+        </p>
+    </div>
+
+    <h3 style="margin-top:40px;">🛠 おすすめカスタム</h3>
+
+    <div class="custom-list">
+
+        <div class="custom-item">
+            <strong>① タイヤ</strong>
+            <span>小さな車だからこそタイヤの影響が大きい。</span>
+        </div>
+
+        <div class="custom-item">
+            <strong>② ブレーキ</strong>
+            <span>パッド・フルードから改善。</span>
+        </div>
+
+        <div class="custom-item">
+            <strong>③ シート</strong>
+            <span>ドライビングポジションを整える。</span>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     BUYER CHECKLIST
+     ========================================================= -->
+
+<section class="checklist">
+
+<div class="container">
+
+    <div class="section-label">
+        USED CAR CHECK
+    </div>
+
+    <h2>中古スポーツカーを買う前に</h2>
+
+    <p style="color:var(--muted); max-width:720px;">
+        スポーツカーは「安い個体」より「状態の良い個体」を選ぶ方が、
+        結果的にコスパが良くなることが多い。
+    </p>
+
+    <div class="check-grid">
+
+        <div class="check-item">修復歴の有無</div>
+        <div class="check-item">整備記録・点検記録</div>
+        <div class="check-item">オイル交換履歴</div>
+        <div class="check-item">クラッチ・ミッション</div>
+        <div class="check-item">タイヤ・ブレーキ</div>
+        <div class="check-item">下回り・サビ</div>
+        <div class="check-item">改造内容</div>
+        <div class="check-item">サーキット・競技使用歴</div>
+        <div class="check-item">エンジンからの異音・異常</div>
+        <div class="check-item">購入後に必要な整備費</div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL
+     ========================================================= -->
+
+<section class="final">
+
+<div class="container">
+
+    <div class="final-box">
+
+        <div class="section-label">
+            FINAL VERDICT
+        </div>
+
+        <h2>
+            結局、どれを選ぶ？
+        </h2>
+
+        <p>
+            <strong style="color:var(--gold-light);">
+                走りと日常性なら GR86 / BRZ。
+            </strong>
+            <br>
+            維持費と実用性まで含めた総合コスパなら
+            <strong style="color:var(--gold-light);">
+                スイフトスポーツ。
+            </strong>
+            <br>
+            個性ならCR-Z、運転の楽しさならロードスター、
+            趣味性ならS660。
+        </p>
+
+        <p style="margin-top:25px;">
+            「一番安い車」ではなく、
+            <strong>自分の使い方で一番得をする車。</strong>
+            <br>
+            それがVELORAの考える、本当のコスパ。
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+    <div class="container">
+        © VELORA — Automotive Media
+    </div>
+
+</footer>
+
+</body>
+</html>
