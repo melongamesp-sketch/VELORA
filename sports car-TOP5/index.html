@@ -348,10 +348,19 @@ tr:last-child td {
     background: var(--line);
 }
 
+
 .spec-item {
     padding: 16px;
     background: var(--card);
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
+
+
+.spec-item strong {
+    align-self: center;
+}
+
 
 .spec-item small {
     display: block;
@@ -359,6 +368,7 @@ tr:last-child td {
     font-size: 11px;
     margin-bottom: 3px;
 }
+
 
 .spec-item strong {
     font-size: 15px;
@@ -994,9 +1004,9 @@ function switchSpec(type) {
 
     <img
         id="86brz-slide"
-        src="images/86-brz-1.jpg"
+        src="https://images.unsplash.com/photo-1690181282403-a45aa85e86aa?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fDg2fGVufDB8fDB8fHww"
         alt="TOYOTA 86"
-        loading="lazy"
+        loading="eager"
 
         style="
             width: 100%;
@@ -1162,16 +1172,16 @@ function switchSpec(type) {
         <button
             type="button"
             class="active"
-            data-spec="gr86"
-            onclick="switchSpec('gr86')">
-            GR86
+            data-spec="86"
+            onclick="switchSpec('86')">
+            86（ZN6）
         </button>
 
         <button
             type="button"
-            data-spec="gr86-real"
-            onclick="switchSpec('gr86-real')">
-            GR86 実測参考
+            data-spec="86-real"
+            onclick="switchSpec('86-real')">
+            実測 参考値
         </button>
 
         <button
@@ -1185,7 +1195,7 @@ function switchSpec(type) {
             type="button"
             data-spec="brz-real"
             onclick="switchSpec('brz-real')">
-            BRZ 実測参考
+            実測参考
         </button>
 
     </div>
@@ -1195,19 +1205,20 @@ function switchSpec(type) {
          86 カタログ値
     ===================================================== -->
 
-    <div id="spec-gr86" class="spec-panel active">
+    <div id="spec-86" class="spec-panel active">
 
         <div class="spec-grid">
 
             <div class="spec-item">
                 <small>ENGINE / エンジン</small>
-                <strong>1,998cc 水平対向4気筒</strong>
+                <strong>1,998cc 水平対向4気筒（FA20型）</strong>
             </div>
 
             <div class="spec-item">
                 <small>POWER / 最高出力</small>
-                <strong>前期 (MT / AT)200 PS 7,000 rpm <br>
-                        後期 (MT)207, (AT)200 PS 7,000 rpm
+                <strong>前期 (MT / AT) 200 PS 7,000 rpm <br>
+                        後期 (MT) 207 PS 7,000 rpm  <br> 
+                        後期 (AT) 200 PS 7,000 rpm
                 </strong>
             </div>
 
@@ -1221,37 +1232,39 @@ function switchSpec(type) {
 
             <div class="spec-item">
                 <small>DRIVE / 駆動方式</small>
-                <strong>FR</strong>
+                <strong>FR（後輪駆動）</strong>
             </div>
 
             <div class="spec-item">
                 <small>TRANSMISSION / トランスミッション</small>
-                <strong>6MT / 6AT</strong>
+                <strong>6MT / 6AT（パドルシフト付き）</strong>
             </div>
 
             <div class="spec-item">
                 <small>SEATS / シート</small>
-                <strong>4名</strong>
+                <strong>乗車定員 4名</strong>
             </div>
 
             <div class="spec-item">
                 <small>BODY / ボディサイズ</small>
-                <strong>4,265 × 1,775 × 1,310 mm</strong>
+                <strong>4,240 × 1,775 × 1,320 mm</strong>
             </div>
 
             <div class="spec-item">
                 <small>WEIGHT / 車重量</small>
-                <strong>1,260〜1,290 kg</strong>
+                <strong>1,190 〜 1,270 kg</strong>
             </div>
 
             <div class="spec-item">
-                <small>FUEL / </small>
-                <strong>ハイオクガソリン</strong>
+                <small>FUEL / 燃料</small>
+                <strong>ハイオク（燃料タンク : 50 L）</strong>
             </div>
 
             <div class="spec-item">
                 <small>WLTC / 燃費</small>
-                <strong>12.0 km/L（6MT） / 11.8 km/L（6AT）</strong>
+                <strong>(6MT)11.8 〜 13.4 km/L <br>
+                        (6AT)12.4 〜 12.8 km/L
+                </strong>
             </div>
 
         </div>
@@ -1260,72 +1273,82 @@ function switchSpec(type) {
             ※メーカー公表値。年式・グレード・トランスミッションなどにより
             車両重量等が異なります。
         </div>
-
     </div>
-
 
    <!-- =====================================================
-     GR86 実測参考値
-     ===================================================== -->
+     86 実測参考値
+    ===================================================== -->
 
-<div id="spec-gr86-real" class="spec-panel">
+<div id="spec-86-real" class="spec-panel">
 
-    <div class="spec-grid">
+        <div class="spec-grid">
 
-        <div class="spec-item">
-            <small>ENGINE</small>
-            <strong>2.387L 水平対向4気筒</strong>
+            <div class="spec-item">
+                <small>ENGINE / エンジン</small>
+                <strong>1,998cc 水平対向4気筒（FA20型）</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>POWER / 最高出力</small>
+                <strong>前期 (MT / AT) 150.6 PS <br>
+                        後期 (MT) 159.1 PS  <br> 
+                        後期 (AT) 146.6 PS
+                </strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TORQUE / 最大トルク</small>
+                <strong>前期 (MT / AT) 167.1 N・m <br>
+                        後期 (MT) 175.4 N・m <br>
+                        後期 (AT) 167.5 N・m 
+                </strong>
+            </div>
+
+            <div class="spec-item">
+                <small>DRIVE / 駆動方式</small>
+                <strong>FR（後輪駆動）</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TRANSMISSION / トランスミッション</small>
+                <strong>6MT / 6AT（パドルシフト付き）</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>SEATS / シート</small>
+                <strong>乗車定員 4名</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>BODY / ボディサイズ</small>
+                <strong>4,240 × 1,775 × 1,320 mm</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WEIGHT / 車重量</small>
+                <strong>1,190 〜 1,270 kg</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>FUEL / 燃料</small>
+                <strong>ハイオク（燃料タンク : 50 L）</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WLTC / 燃費</small>
+                <strong>(6MT)11.8 〜 13.4 km/L <br>
+                        (6AT)12.4 〜 12.8 km/L
+                </strong>
+            </div>
+
         </div>
 
-        <div class="spec-item">
-            <small>POWER</small>
-            <strong>約206〜207 whp</strong>
+        <div class="spec-note">
+            ※実測参考値。シャシーダイナモによる計測例。
+            車両・装着部品・燃料・測定条件などにより個体差があります。
         </div>
+</div>
 
-        <div class="spec-item">
-            <small>TORQUE</small>
-            <strong>約166 lb-ft（約225 N・m）</strong>
-        </div>
-
-        <div class="spec-item">
-            <small>DRIVE</small>
-            <strong>FR</strong>
-        </div>
-
-        <div class="spec-item">
-            <small>TRANSMISSION</small>
-            <strong>6MT / 6AT</strong>
-        </div>
-
-        <div class="spec-item">
-            <small>SEATS</small>
-            <strong>4名</strong>
-        </div>
-
-        <div class="spec-item">
-            <small>WEIGHT</small>
-            <strong>約1,260〜1,290 kg</strong>
-        </div>
-
-        <div class="spec-item">
-            <small>BODY</small>
-            <strong>カタログ値より僅かに変動</strong>
-        </div>
-
-        <div class="spec-item">
-            <small>FUEL</small>
-            <strong>ハイオクガソリン</strong>
-        </div>
-
-        <div class="spec-item">
-            <small>WLTC（燃費）</small>
-            <strong>10.82 km/L（6MT） / 9.74 km/L（6AT）</strong>
-        </div>
-
-
-    </div>
-
-    
         <div class="spec-note">
             <strong>実測参考値について</strong><br>
             実車をシャシーダイナモ等で測定した例を参考値として掲載。
@@ -1402,68 +1425,77 @@ function switchSpec(type) {
 
     </div>
 
-    
-
-
 <!-- =====================================================
      BRZ 実測参考値
      ===================================================== -->
 
-<div id="spec-brz-real" class="spec-panel">
+<!-- =====================================================
+     BRZ カタログ値
+===================================================== -->
+
+<div id="spec-brz" class="spec-panel">
 
     <div class="spec-grid">
 
         <div class="spec-item">
-            <small>ENGINE</small>
-            <strong>2.387L 水平対向4気筒</strong>
+            <small>ENGINE / エンジン</small>
+            <strong>2,387cc 水平対向4気筒</strong>
         </div>
 
         <div class="spec-item">
-            <small>POWER</small>
-            <strong>約206〜207 whp</strong>
+            <small>POWER / 最高出力</small>
+            <strong>235 PS 7,000 rpm</strong>
         </div>
 
         <div class="spec-item">
-            <small>TORQUE</small>
-            <strong>約166 lb-ft（約225 N・m）</strong>
+            <small>TORQUE / 最大トルク</small>
+            <strong>250 N・m 3,700 rpm</strong>
         </div>
 
         <div class="spec-item">
-            <small>DRIVE</small>
-            <strong>FR</strong>
+            <small>DRIVE / 駆動方式</small>
+            <strong>FR（後輪駆動）</strong>
         </div>
 
         <div class="spec-item">
-            <small>TRANSMISSION</small>
+            <small>TRANSMISSION / トランスミッション</small>
             <strong>6MT / 6AT</strong>
         </div>
 
         <div class="spec-item">
-            <small>SEATS</small>
-            <strong>4名</strong>
+            <small>SEATS / シート</small>
+            <strong>乗車定員 4名</strong>
         </div>
 
         <div class="spec-item">
-            <small>WEIGHT</small>
-            <strong>約1,260〜1,290 kg</strong>
+            <small>BODY / ボディサイズ</small>
+            <strong>4,265 × 1,775 × 1,310 mm</strong>
         </div>
 
         <div class="spec-item">
-            <small>BODY</small>
-            <strong>カタログ値より僅かに変動</strong>
+            <small>WEIGHT / 車両重量</small>
+            <strong>1,260 〜 1,290 kg</strong>
         </div>
 
         <div class="spec-item">
-            <small>FUEL</small>
-            <strong>ハイオクガソリン</strong>
+            <small>FUEL / 燃料</small>
+            <strong>ハイオクガソリン（燃料タンク : 50 L）</strong>
         </div>
 
         <div class="spec-item">
-            <small>WLTC（燃費）</small>
-            <strong>16.75 km/L（6AT・高速＋一般道）</strong>
+            <small>WLTC / 燃費</small>
+            <strong>6MT：11.9 km/L<br>
+                    6AT：11.7 km/L</strong>
         </div>
 
     </div>
+
+    <div class="spec-note">
+        ※メーカー公表値。グレード・トランスミッションなどにより
+        車両重量や燃費等が異なる場合があります。
+    </div>
+
+</div>
 
      <div class="spec-note">
         <strong>実測参考値について</strong><br>
