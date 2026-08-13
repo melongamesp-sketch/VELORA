@@ -4,16 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>コスパ最強のスポーツカー5選｜維持費まで考えて選ぶVELORA</title>
+<title>コスパ最強のスポーツカー5選｜維持費・実用性で比較【VELORA】</title>
 
-<meta name="description" content="購入価格だけでは決まらない。本当のコスパを「購入費＋維持費＋走る楽しさ＋実用性」で評価。GR86/BRZ、スイフトスポーツ、CR-Z、ロードスター、S660を徹底比較。">
+<meta name="description" content="コスパの高いスポーツカー5台を、購入価格だけでなく維持費・実用性・走る楽しさで比較。GR86/BRZ、スイフトスポーツ、CR-Z、ロードスター、S660の特徴や中古車選びのポイントをVELORAが解説。">
 
 <style>
 
 /* =========================================================
    VELORA SPORTS CAR
    Luxury × Sport
-   ========================================================= */
+========================================================= */
 
 :root {
     --bg: #070809;
@@ -72,7 +72,7 @@ img {
 
 /* =========================================================
    HEADER
-   ========================================================= */
+========================================================= */
 
 header {
     position: sticky;
@@ -201,7 +201,7 @@ header {
 
 /* =========================================================
    INTRO
-   ========================================================= */
+========================================================= */
 
 .intro {
     padding: 80px 0 40px;
@@ -228,7 +228,7 @@ header {
 
 /* =========================================================
    QUICK TABLE
-   ========================================================= */
+========================================================= */
 
 .quick {
     padding: 30px 0 100px;
@@ -284,7 +284,7 @@ tr:last-child td {
 
 /* =========================================================
    CAR SECTION
-   ========================================================= */
+========================================================= */
 
 .car {
     padding: 110px 0;
@@ -318,7 +318,7 @@ tr:last-child td {
 
 /* =========================================================
    SPEC CARD
-   ========================================================= */
+========================================================= */
 
 .spec-card {
     margin-top: 38px;
@@ -366,7 +366,7 @@ tr:last-child td {
 
 /* =========================================================
    CONCLUSION
-   ========================================================= */
+========================================================= */
 
 .verdict {
     margin: 35px 0;
@@ -385,7 +385,7 @@ tr:last-child td {
 
 /* =========================================================
    SCORE GRID
-   ========================================================= */
+========================================================= */
 
 .score-grid {
     display: grid;
@@ -483,7 +483,7 @@ tr:last-child td {
 
 /* =========================================================
    PRACTICALITY
-   ========================================================= */
+========================================================= */
 
 .rating-row {
     display: grid;
@@ -519,7 +519,7 @@ tr:last-child td {
 
 /* =========================================================
    MAINTENANCE
-   ========================================================= */
+========================================================= */
 
 .maintenance {
     margin-top: 30px;
@@ -541,7 +541,7 @@ tr:last-child td {
 
 /* =========================================================
    CUSTOM
-   ========================================================= */
+========================================================= */
 
 .custom-list {
     display: grid;
@@ -569,7 +569,7 @@ tr:last-child td {
 
 /* =========================================================
    BUYER CHECK
-   ========================================================= */
+========================================================= */
 
 .checklist {
     padding: 100px 0;
@@ -634,7 +634,7 @@ tr:last-child td {
 
 /* =========================================================
    FOOTER
-   ========================================================= */
+========================================================= */
 
 footer {
     padding: 40px 0;
@@ -646,7 +646,7 @@ footer {
 
 /* =========================================================
    MOBILE
-   ========================================================= */
+========================================================= */
 
 @media (max-width: 760px) {
 
@@ -694,7 +694,100 @@ footer {
     }
 }
 
+/* =========================================================
+   GR86 / BRZ SPEC SWITCH
+   ========================================================= */
+
+.spec-switch {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.spec-switch button {
+    padding: 9px 18px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--card);
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.spec-switch button:hover {
+    border-color: rgba(201,168,106,0.5);
+    color: var(--gold-light);
+}
+
+.spec-switch button.active {
+    background: var(--gold);
+    color: #070809;
+    border-color: var(--gold);
+}
+
+.spec-panel {
+    display: none;
+}
+
+.spec-panel.active {
+    display: block;
+}
+
+/* 実測値の注意書き */
+
+.spec-note {
+    margin-top: 16px;
+    padding: 13px 15px;
+    border-left: 2px solid var(--gold);
+    background: rgba(201,168,106,0.04);
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.spec-note strong {
+    color: var(--gold-light);
+}
+
 </style>
+
+
+    
+<script>
+function switchSpec(type) {
+
+    const panels = document.querySelectorAll(".spec-panel");
+    const buttons = document.querySelectorAll(".spec-switch button");
+
+    panels.forEach(panel => {
+        panel.classList.remove("active");
+    });
+
+    buttons.forEach(button => {
+        button.classList.remove("active");
+    });
+
+    const target = document.getElementById("spec-" + type);
+
+    if (target) {
+        target.classList.add("active");
+    }
+
+    const button = document.querySelector(
+        '.spec-switch button[data-spec="' + type + '"]'
+    );
+
+    if (button) {
+        button.classList.add("active");
+    }
+}
+</script>
+
+
+
 </head>
 
 <body>
@@ -713,7 +806,7 @@ footer {
 
 <!-- =========================================================
      HERO
-     ========================================================= -->
+========================================================= -->
 
 <section class="hero">
 
@@ -745,7 +838,7 @@ footer {
 
 <!-- =========================================================
      INTRO
-     ========================================================= -->
+========================================================= -->
 
 <section class="intro">
 
@@ -763,9 +856,22 @@ footer {
         <p>
             VELORAでは、コスパを車両価格だけでは判断しません。
             購入費、税金、燃料、保険、車検、消耗品、故障リスクなどの
-            維持費まで考慮し、それに対して走行性能・実用性・楽しさ・所有満足度が
-            どれだけ得られるかを総合的に評価します。
+            維持費に加え、走行性能・スポーツカーらしいデザイン・実用性・
+            運転する楽しさ・所有満足度まで含め、
+            「払った金額に対してどれだけ満足できるか」を総合的に評価します。
         </p>
+
+        <div class="info-card" style="margin-top:30px;">
+
+    <h3>VELORAの評価基準</h3>
+        <p>
+            本記事のランキングは、単純な維持費や燃費だけで決めていません。
+            スポーツカーとしての魅力、デザイン、走行性能、中古車としての価格、
+            実用性、維持費、そして所有する満足感を総合的に評価しています。
+            そのため、維持費だけを比較した場合とは順位が異なる場合があります。
+        </p>
+        
+    </div>
 
     </div>
 
@@ -774,7 +880,7 @@ footer {
 
 <!-- =========================================================
      QUICK COMPARISON
-     ========================================================= -->
+========================================================= -->
 
 <section class="quick">
 
@@ -792,11 +898,11 @@ footer {
 
                 <thead>
                     <tr>
-                        <th>#</th>
+                        <th>順位</th>
                         <th>車種</th>
-                        <th>スポーツ</th>
-                        <th>実用性</th>
-                        <th>快適性</th>
+                        <th>スポーツ性能</th>
+                        <th>外観</th>
+                        <th>実用性 / 快適性</th>
                         <th>維持しやすさ</th>
                         <th>コスパ</th>
                     </tr>
@@ -807,51 +913,51 @@ footer {
                     <tr>
                         <td class="rank">01</td>
                         <td class="car-name">GR86 / BRZ</td>
-                        <td>95</td>
-                        <td>70</td>
-                        <td>68</td>
-                        <td>78</td>
-                        <td class="score">94</td>
+                        <td>91</td>
+                        <td>94</td>
+                        <td>80</td>
+                        <td>80</td>
+                        <td class="score">92</td>
                     </tr>
 
                     <tr>
                         <td class="rank">02</td>
                         <td class="car-name">スイフトスポーツ</td>
-                        <td>84</td>
-                        <td>92</td>
+                        <td>75</td>
                         <td>78</td>
-                        <td>92</td>
-                        <td class="score">98</td>
+                        <td>96</td>
+                        <td>86</td>
+                        <td class="score">89</td>
                     </tr>
 
                     <tr>
                         <td class="rank">03</td>
-                        <td class="car-name">Honda CR-Z</td>
+                        <td class="car-name">ロードスター </td>
+                        <td>83</td>
+                        <td>83</td>
+                        <td>77</td>
                         <td>78</td>
-                        <td>82</td>
-                        <td>72</td>
-                        <td>76</td>
-                        <td class="score">91</td>
+                        <td class="score">86</td>
                     </tr>
 
                     <tr>
                         <td class="rank">04</td>
-                        <td class="car-name">ロードスター</td>
-                        <td>96</td>
-                        <td>45</td>
+                        <td class="car-name">CR-Z</td>
+                        <td>72</td>
                         <td>62</td>
-                        <td>86</td>
-                        <td class="score">95</td>
+                        <td>84</td>
+                        <td>97</td>
+                        <td class="score">84</td>
                     </tr>
 
                     <tr>
                         <td class="rank">05</td>
                         <td class="car-name">S660</td>
-                        <td>91</td>
-                        <td>30</td>
-                        <td>55</td>
-                        <td>89</td>
-                        <td class="score">90</td>
+                        <td>77</td>
+                        <td>81</td>
+                        <td>72</td>
+                        <td>94</td>
+                        <td class="score">83</td>
                     </tr>
 
                 </tbody>
@@ -866,8 +972,8 @@ footer {
 
 
 <!-- =========================================================
-     01 GR86 / BRZ
-     ========================================================= -->
+     01 86 / BRZ
+========================================================= -->
 
 <section class="car">
 
@@ -875,7 +981,161 @@ footer {
 
     <div class="car-number">01 / TOYOTA × SUBARU</div>
 
-    <h2 class="car-title">GR86 / BRZ</h2>
+    <h2 class="car-title">86 / BRZ</h2>
+
+    <div style="
+    margin: 35px 0 40px;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid var(--line);
+    position: relative;
+    ">
+
+    <img
+        id="86brz-slide"
+        src="images/86-brz-1.jpg"
+        alt="TOYOTA 86"
+        loading="lazy"
+
+        style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 1;
+            transition: opacity 0.25s ease-in-out;
+        ">
+
+
+    <!-- 車名表示 -->
+
+    <div
+        id="86brz-name"
+        style="
+            position:absolute;
+            left:20px;
+            bottom:20px;
+            padding:8px 16px;
+            border-radius:8px;
+            background:rgba(0,0,0,0.65);
+            color:#fff;
+            font-size:16px;
+            font-weight:bold;
+            z-index:2;
+        ">
+        86
+    </div>
+
+
+    <!-- 左矢印 -->
+
+    <button
+        type="button"
+        onclick="change86BRZImage(-1)"
+        style="
+            position:absolute;
+            left:15px;
+            top:50%;
+            transform:translateY(-50%);
+            width:45px;
+            height:45px;
+            border-radius:50%;
+            border:1px solid rgba(255,255,255,0.5);
+            background:rgba(0,0,0,0.5);
+            color:#fff;
+            font-size:25px;
+            cursor:pointer;
+            z-index:2;
+        ">
+        ←
+    </button>
+
+
+    <!-- 右矢印 -->
+
+    <button
+        type="button"
+        onclick="change86BRZImage(1)"
+        style="
+            position:absolute;
+            right:15px;
+            top:50%;
+            transform:translateY(-50%);
+            width:45px;
+            height:45px;
+            border-radius:50%;
+            border:1px solid rgba(255,255,255,0.5);
+            background:rgba(0,0,0,0.5);
+            color:#fff;
+            font-size:25px;
+            cursor:pointer;
+            z-index:2;
+        ">
+        →
+    </button>
+
+    <script>
+
+    const images86BRZ = [
+        "https://images.unsplash.com/photo-1690181282403-a45aa85e86aa?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fDg2fGVufDB8fDB8fHww",
+        "https://images.unsplash.com/photo-1551495388-c2b050474942?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fDg2fGVufDB8fDB8fHww",
+        "https://images.unsplash.com/photo-1704233131195-5885ee936356?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fEJSWnxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1630858273073-ceef9c4d9504?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QlJafGVufDB8fDB8fHww"
+    ];
+
+
+    const names86BRZ = [
+        "TOYOTA 86",
+        "TOYOTA 86",
+        "SUBARU BRZ",
+        "SUBARU BRZ"
+    ];
+
+
+    let index86BRZ = 0;
+
+
+    function change86BRZImage(direction) {
+
+        const img = document.getElementById("86brz-slide");
+        const name = document.getElementById("86brz-name");
+
+        if (!img || !name) return;
+
+
+        img.style.opacity = 0;
+
+
+        setTimeout(() => {
+
+            index86BRZ += direction;
+
+
+            if (index86BRZ < 0) {
+                index86BRZ = images86BRZ.length - 1;
+            }
+
+
+            if (index86BRZ >= images86BRZ.length) {
+                index86BRZ = 0;
+            }
+
+
+            img.src = images86BRZ[index86BRZ];
+
+            img.alt = names86BRZ[index86BRZ];
+
+            name.textContent = names86BRZ[index86BRZ];
+
+            img.style.opacity = 1;
+
+        }, 250);
+
+    }
+
+    </script>
+
+</div>
 
     <p class="car-subtitle">
         「初めての本格FR」に強い、万能型スポーツカー。
@@ -889,7 +1149,53 @@ footer {
 
     <div class="spec-card">
 
-        <div class="spec-title">SPEC</div>
+    <div class="spec-title">SPEC</div>
+
+
+    <!-- =====================================================
+         SPEC SWITCH
+         4パターン
+    ===================================================== -->
+
+    <div class="spec-switch">
+
+        <button
+            type="button"
+            class="active"
+            data-spec="gr86"
+            onclick="switchSpec('gr86')">
+            GR86
+        </button>
+
+        <button
+            type="button"
+            data-spec="gr86-real"
+            onclick="switchSpec('gr86-real')">
+            GR86 実測参考
+        </button>
+
+        <button
+            type="button"
+            data-spec="brz"
+            onclick="switchSpec('brz')">
+            BRZ
+        </button>
+
+        <button
+            type="button"
+            data-spec="brz-real"
+            onclick="switchSpec('brz-real')">
+            BRZ 実測参考
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         GR86 カタログ値
+         ===================================================== -->
+
+    <div id="spec-gr86" class="spec-panel active">
 
         <div class="spec-grid">
 
@@ -914,6 +1220,11 @@ footer {
             </div>
 
             <div class="spec-item">
+                <small>TRANSMISSION</small>
+                <strong>6MT / 6AT</strong>
+            </div>
+
+            <div class="spec-item">
                 <small>SEATS</small>
                 <strong>4名</strong>
             </div>
@@ -923,162 +1234,128 @@ footer {
                 <strong>4,265 × 1,775 × 1,310 mm</strong>
             </div>
 
-        </div>
-
-    </div>
-
-    <div class="verdict">
-        <strong>VELORA'S CONCLUSION</strong>
-        本格FRを楽しみながら、1台で日常生活までこなしたい人におすすめ。
-    </div>
-
-    <div class="score-grid">
-
-        <div class="score-box">
-            <div class="score-top">
-                <span class="score-name">スポーツ性能</span>
-                <span class="score-number">95</span>
+            <div class="spec-item">
+                <small>WEIGHT</small>
+                <strong>1,260〜1,290 kg</strong>
             </div>
-            <div class="bar"><span style="width:95%"></span></div>
-        </div>
 
-        <div class="score-box">
-            <div class="score-top">
-                <span class="score-name">実用性</span>
-                <span class="score-number">70</span>
+            <div class="spec-item">
+                <small>FUEL</small>
+                <strong>ハイオクガソリン</strong>
             </div>
-            <div class="bar"><span style="width:70%"></span></div>
-        </div>
 
-        <div class="score-box">
-            <div class="score-top">
-                <span class="score-name">快適性</span>
-                <span class="score-number">68</span>
+            <div class="spec-item">
+                <small>WLTC（燃費）</small>
+                <strong>12.0 km/L（6MT） / 11.8 km/L（6AT）</strong>
             </div>
-            <div class="bar"><span style="width:68%"></span></div>
+
         </div>
 
-        <div class="score-box">
-            <div class="score-top">
-                <span class="score-name">コスパ</span>
-                <span class="score-number">94</span>
-            </div>
-            <div class="bar"><span style="width:94%"></span></div>
+        <div class="spec-note">
+            ※メーカー公表値。年式・グレード・トランスミッションなどにより
+            車両重量等が異なります。
         </div>
 
     </div>
 
-    <div class="content-grid">
 
-        <div class="info-card">
-            <h3>メリット</h3>
-            <p class="pro">本格的なFRスポーツを楽しめる</p>
-            <p class="pro">4人乗りで日常使用にも対応</p>
-            <p class="pro">カスタムパーツが非常に豊富</p>
+   <!-- =====================================================
+     GR86 実測参考値
+     ===================================================== -->
+
+<div id="spec-gr86-real" class="spec-panel">
+
+    <div class="spec-grid">
+
+        <div class="spec-item">
+            <small>ENGINE</small>
+            <strong>2.387L 水平対向4気筒</strong>
         </div>
 
-        <div class="info-card">
-            <h3>デメリット</h3>
-            <p class="con">後席は大人が長時間乗るには狭い</p>
-            <p class="con">ハイオク指定で燃料コストは軽量車より高め</p>
-            <p class="con">最低地上高が低く段差には注意</p>
+        <div class="spec-item">
+            <small>POWER</small>
+            <strong>約206〜207 whp</strong>
         </div>
 
-        <div class="info-card">
-            <h3>人気の層</h3>
-            <p>
-                初めてのFRスポーツを探している人、
-                カスタムを楽しみたい人、通勤と休日の走りを
-                1台で両立したい人。
-            </p>
+        <div class="spec-item">
+            <small>TORQUE</small>
+            <strong>約166 lb-ft（約225 N・m）</strong>
         </div>
 
-        <div class="info-card">
-            <h3>買って後悔しやすい人</h3>
-            <p>
-                後席の広さや燃費を最優先する人。
-                「スポーツカーらしい不便さ」を許容できるかがポイント。
-            </p>
+        <div class="spec-item">
+            <small>DRIVE</small>
+            <strong>FR</strong>
+        </div>
+
+        <div class="spec-item">
+            <small>TRANSMISSION</small>
+            <strong>6MT / 6AT</strong>
+        </div>
+
+        <div class="spec-item">
+            <small>SEATS</small>
+            <strong>4名</strong>
+        </div>
+
+        <div class="spec-item">
+            <small>WEIGHT</small>
+            <strong>約1,260〜1,290 kg</strong>
+        </div>
+
+        <div class="spec-item">
+            <small>BODY</small>
+            <strong>カタログ値より僅かに変動</strong>
+        </div>
+
+        <div class="spec-item">
+            <small>FUEL</small>
+            <strong>ハイオクガソリン</strong>
+        </div>
+
+        <div class="spec-item">
+            <small>WLTC（燃費）</small>
+            <strong>10.82 km/L（6MT） / 9.74 km/L（6AT）</strong>
+        </div>
+
+
+    </div>
+
+    
+        <div class="spec-note">
+            <strong>実測参考値について</strong><br>
+            実車をシャシーダイナモ等で測定した例を参考値として掲載。
+            測定機器、補正方法、気温、気圧、車両状態などによって結果が変わるため、
+            「GR86本来の絶対値」としてではなく、あくまで参考程度にご覧ください。
         </div>
 
     </div>
 
-    <div class="maintenance">
-        <h3>🔧 注意点・中古車チェック</h3>
-        <p>
-            改造内容、サーキット走行歴、クラッチ・ブレーキ・タイヤ、
-            下回り、整備記録を重点的に確認。
-            特に「安いから」という理由だけで車両を選ばないこと。
-        </p>
-    </div>
+    <!-- =====================================================
+         BRZ カタログ値
+         ===================================================== -->
 
-    <h3 style="margin-top:40px;">🛠 おすすめカスタム</h3>
-
-    <div class="custom-list">
-
-        <div class="custom-item">
-            <strong>① タイヤ</strong>
-            <span>走りの基礎。まずはグリップとバランスを重視。</span>
-        </div>
-
-        <div class="custom-item">
-            <strong>② ブレーキ</strong>
-            <span>スポーツ走行をするならパッド・フルードから。</span>
-        </div>
-
-        <div class="custom-item">
-            <strong>③ 足回り</strong>
-            <span>車高よりも乗り味とバランスを優先。</span>
-        </div>
-
-    </div>
-
-</div>
-
-</section>
-
-
-<!-- =========================================================
-     02 SWIFT SPORT
-     ========================================================= -->
-
-<section class="car">
-
-<div class="container">
-
-    <div class="car-number">02 / SUZUKI</div>
-
-    <h2 class="car-title">SWIFT SPORT</h2>
-
-    <p class="car-subtitle">
-        「普段使いできるスポーツカー」の代表格。
-    </p>
-
-    <p class="car-intro">
-        1.4L直噴ターボを搭載し、軽量ボディと組み合わせた
-        スイフトスポーツ。燃費・税金・タイヤなどの負担を
-        比較的抑えながら、スポーツドライビングも楽しめる。
-    </p>
-
-    <div class="spec-card">
-
-        <div class="spec-title">SPEC</div>
+    <div id="spec-brz" class="spec-panel">
 
         <div class="spec-grid">
 
             <div class="spec-item">
                 <small>ENGINE</small>
-                <strong>1.4L 直噴ターボ</strong>
+                <strong>2.4L 水平対向4気筒</strong>
             </div>
 
             <div class="spec-item">
                 <small>POWER</small>
-                <strong>140 PS</strong>
+                <strong>235 PS</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TORQUE</small>
+                <strong>250 N・m</strong>
             </div>
 
             <div class="spec-item">
                 <small>DRIVE</small>
-                <strong>FF</strong>
+                <strong>FR</strong>
             </div>
 
             <div class="spec-item">
@@ -1088,19 +1365,531 @@ footer {
 
             <div class="spec-item">
                 <small>SEATS</small>
-                <strong>5名</strong>
+                <strong>4名</strong>
             </div>
 
             <div class="spec-item">
-                <small>WLTC</small>
-                <strong>17.6 km/L（6MT）</strong>
+                <small>BODY</small>
+                <strong>4,265 × 1,775 × 1,310 mm</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WEIGHT</small>
+                <strong>約1,270 kg</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>FUEL</small>
+                <strong>ハイオクガソリン</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WLTC（燃費）</small>
+                <strong>11.9 km/L（6MT） / 11.7 km/L（6AT）</strong>
             </div>
 
         </div>
 
+        <div class="spec-note">
+            ※メーカー公表値。グレード・トランスミッションなどにより
+            車両重量等が異なる場合があります。
+        </div>
+
     </div>
 
-    <div class="verdict">
+    
+
+
+<!-- =====================================================
+     BRZ 実測参考値
+     ===================================================== -->
+
+<div id="spec-brz-real" class="spec-panel">
+
+    <div class="spec-grid">
+
+        <div class="spec-item">
+            <small>ENGINE</small>
+            <strong>2.387L 水平対向4気筒</strong>
+        </div>
+
+        <div class="spec-item">
+            <small>POWER</small>
+            <strong>約206〜207 whp</strong>
+        </div>
+
+        <div class="spec-item">
+            <small>TORQUE</small>
+            <strong>約166 lb-ft（約225 N・m）</strong>
+        </div>
+
+        <div class="spec-item">
+            <small>DRIVE</small>
+            <strong>FR</strong>
+        </div>
+
+        <div class="spec-item">
+            <small>TRANSMISSION</small>
+            <strong>6MT / 6AT</strong>
+        </div>
+
+        <div class="spec-item">
+            <small>SEATS</small>
+            <strong>4名</strong>
+        </div>
+
+        <div class="spec-item">
+            <small>WEIGHT</small>
+            <strong>約1,260〜1,290 kg</strong>
+        </div>
+
+        <div class="spec-item">
+            <small>BODY</small>
+            <strong>カタログ値より僅かに変動</strong>
+        </div>
+
+        <div class="spec-item">
+            <small>FUEL</small>
+            <strong>ハイオクガソリン</strong>
+        </div>
+
+        <div class="spec-item">
+            <small>WLTC（燃費）</small>
+            <strong>16.75 km/L（6AT・高速＋一般道）</strong>
+        </div>
+
+    </div>
+
+     <div class="spec-note">
+        <strong>実測参考値について</strong><br>
+        実車をシャシーダイナモ等で測定した例を参考値として掲載。
+        測定機器、補正方法、気温、気圧、車両状態などによって結果が変わるため、
+        「BRZ本来の絶対値」としてではなく、あくまで参考程度にご覧ください。
+    </div>
+
+
+</div> <!-- spec-panel -->
+
+
+</div> <!-- spec-card -->
+
+
+</div> <!-- container -->
+
+
+</section>
+
+
+<!-- =========================================================
+     02 SWIFT SPORT
+ ========================================================= -->
+
+
+<section class="car">
+
+
+<div class="container">
+
+
+    <div class="car-number">02 / SUZUKI</div>
+
+
+    <h2 class="car-title">SWIFT SPORT</h2>
+
+
+    <div style="
+    margin: 35px 0 40px;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid var(--line);
+    position: relative;
+">
+
+
+    <img
+        id="swiftsport-slide"
+        src="https://images.unsplash.com/photo-1699862335489-36f7dec55c0e?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8U1dJRlQlMjBTUE9SVHxlbnwwfHwwfHx8MA%3D%3D"
+        alt="スズキ スイフトスポーツ"
+        loading="lazy"
+
+        style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 1;
+            transition: opacity 0.25s ease-in-out;
+        "
+    >
+
+
+    <!-- 車名表示 -->
+
+    <div
+        id="swiftsport-name"
+        style="
+            position:absolute;
+            left:20px;
+            bottom:20px;
+            padding:8px 16px;
+            border-radius:8px;
+            background:rgba(0,0,0,0.65);
+            color:#fff;
+            font-size:16px;
+            font-weight:bold;
+            z-index:2;
+        ">
+        SUZUKI SWIFT SPORT
+    </div>
+
+
+    <!-- 左矢印 -->
+
+    <button
+        type="button"
+        onclick="changeSwiftSportImage(-1)"
+        style="
+            position:absolute;
+            left:15px;
+            top:50%;
+            transform:translateY(-50%);
+            width:45px;
+            height:45px;
+            border-radius:50%;
+            border:1px solid rgba(255,255,255,0.5);
+            background:rgba(0,0,0,0.5);
+            color:#fff;
+            font-size:25px;
+            cursor:pointer;
+            z-index:2;
+        ">
+        ←
+    </button>
+
+
+    <!-- 右矢印 -->
+
+    <button
+        type="button"
+        onclick="changeSwiftSportImage(1)"
+        style="
+            position:absolute;
+            right:15px;
+            top:50%;
+            transform:translateY(-50%);
+            width:45px;
+            height:45px;
+            border-radius:50%;
+            border:1px solid rgba(255,255,255,0.5);
+            background:rgba(0,0,0,0.5);
+            color:#fff;
+            font-size:25px;
+            cursor:pointer;
+            z-index:2;
+        ">
+        →
+    </button>
+
+    <script>
+        const imagesSwiftSport = [
+         "https://images.unsplash.com/photo-1699862335489-36f7dec55c0e?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8U1dJRlQlMjBTUE9SVHxlbnwwfHwwfHx8MA%3D%3D",
+         "https://images.unsplash.com/photo-1699862350635-7d094ede56f7?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fFNXSUZUJTIwU1BPUlR8ZW58MHx8MHx8fDA%3D"
+    ];
+
+    let indexSwiftSport = 0;   
+
+    function changeSwiftSportImage(direction) {
+
+        const img = document.getElementById("swiftsport-slide");
+        const name = document.getElementById("swiftsport-name");
+
+        if (!img || !name) return;
+
+
+        img.style.opacity = 0;
+
+
+        setTimeout(() => {
+
+            indexSwiftSport += direction;
+
+
+            if (indexSwiftSport < 0) {
+                indexSwiftSport = imagesSwiftSport.length - 1;
+            }
+
+
+            if (indexSwiftSport >= imagesSwiftSport.length) {
+                indexSwiftSport = 0;
+            }
+
+
+            img.src = imagesSwiftSport[indexSwiftSport];
+
+            img.alt = "スズキ スイフトスポーツ";
+
+            name.textContent = "SUZUKI SWIFT SPORT";
+
+            img.style.opacity = 1;
+
+        }, 250);
+
+    }
+
+    </script>
+
+</div>>
+
+
+    <p class="car-subtitle">
+        軽快な走りと実用性を両立した、コスパ型ホットハッチ。
+    </p>
+
+
+    <p class="car-intro">
+        スイフトスポーツは、1.4L直列4気筒ターボを搭載するFFスポーツ。
+        軽量なボディとトルクフルなエンジンによって、
+        日常でも扱いやすく、スポーツ走行も楽しめるのが魅力。
+    </p>
+
+
+    <div class="spec-card">
+
+
+    <div class="spec-title">SPEC</div>
+
+
+    <!-- =====================================================
+         SPEC SWITCH
+    ===================================================== -->
+
+
+    <div class="spec-switch">
+
+
+        <button
+            type="button"
+            class="active"
+            data-spec="swiftsport"
+            onclick="switchSpec('swiftsport')">
+            カタログ値
+        </button>
+
+
+        <button
+            type="button"
+            data-spec="swiftsport-real"
+            onclick="switchSpec('swiftsport-real')">
+            実測参考
+        </button>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         SWIFT SPORT カタログ値
+         ===================================================== -->
+
+
+    <div id="spec-swiftsport" class="spec-panel active">
+
+
+        <div class="spec-grid">
+
+
+            <div class="spec-item">
+                <small>ENGINE</small>
+                <strong>1.4L 直列4気筒ターボ</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>POWER</small>
+                <strong>140 PS</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>TORQUE</small>
+                <strong>230 N・m</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>DRIVE</small>
+                <strong>FF</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>TRANSMISSION</small>
+                <strong>6MT / 6AT</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>SEATS</small>
+                <strong>5名</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>BODY</small>
+                <strong>3,890 × 1,735 × 1,500 mm</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>WEIGHT</small>
+                <strong>970〜990 kg</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>FUEL</small>
+                <strong>ハイオクガソリン</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>WLTC（燃費）</small>
+                <strong>17.6 km/L（6MT） / 16.6 km/L（6AT）</strong>
+            </div>
+
+
+        </div>
+
+
+        <div class="spec-note">
+            ※メーカー公表値。年式・グレード・トランスミッションなどにより
+            車両重量等が異なります。
+        </div>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         SWIFT SPORT 実測参考値
+    ===================================================== -->
+
+
+    <div id="spec-swiftsport-real" class="spec-panel">
+
+
+        <div class="spec-grid">
+
+
+            <div class="spec-item">
+                <small>ENGINE</small>
+                <strong>1.371L 直列4気筒ターボ</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>POWER</small>
+                <strong>約145〜159 PS</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>TORQUE</small>
+                <strong>約198〜231 N・m</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>DRIVE</small>
+                <strong>FF</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>TRANSMISSION</small>
+                <strong>6MT / 6AT</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>SEATS</small>
+                <strong>5名</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>BODY</small>
+                <strong>カタログ値より僅かに変動</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WEIGHT</small>
+                <strong>約970〜990 kg</strong>
+            </div>
+
+            <div class="spec-item">
+                <small>FUEL</small>
+                <strong>ハイオクガソリン</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>WLTC（燃費）</small>
+                <strong>約17.1 km/L（街乗り） / 約20.7 km/L（高速）</strong>
+            </div>
+
+        </div>
+
+
+        <div class="spec-note">
+            <strong>実測参考値について</strong><br>
+            実走行データや実車計測例を参考値として掲載しています。
+            実燃費は走行条件、交通状況、気温、タイヤ、運転方法などによって
+            大きく変動します。POWER・TORQUEについても測定機器や測定条件に
+            よって数値が変わるため、特定の実測値を絶対値として扱っていません。
+        </div>
+    </div>
+</div>
+
+<!-- =====================================================
+    PRICE
+===================================================== -->
+
+
+    <div class="spec-card">
+
+
+        <div class="spec-title">PRICE / 相場</div>
+
+
+        <div class="spec-grid">
+
+
+            <div class="spec-item">
+                <small>NEW CAR PRICE</small>
+                <strong>約249万円〜</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>USED CAR MIN</small>
+                <strong>約30万円〜</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>USED CAR MAX</small>
+                <strong>約250万円</strong>
+            </div>
+
+
+            <div class="spec-item">
+                <small>USED CAR AVERAGE</small>
+                <strong>約100万円前後</strong>
+            </div>
+
+
+        </div>
+
         <strong>VELORA'S CONCLUSION</strong>
         「スポーツカーが欲しい。でも普段の生活も犠牲にしたくない」なら最有力。
     </div>
@@ -1110,15 +1899,23 @@ footer {
         <div class="score-box">
             <div class="score-top">
                 <span class="score-name">スポーツ性能</span>
-                <span class="score-number">84</span>
+                <span class="score-number">75</span>
             </div>
             <div class="bar"><span style="width:84%"></span></div>
         </div>
 
         <div class="score-box">
             <div class="score-top">
-                <span class="score-name">実用性</span>
-                <span class="score-number">92</span>
+                <span class="score-name">外観</span>
+                <span class="score-number">78</span>
+            </div>
+            <div class="bar"><span style="width:92%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">実用性 / 快適性</span>
+                <span class="score-number">96</span>
             </div>
             <div class="bar"><span style="width:92%"></span></div>
         </div>
@@ -1126,7 +1923,7 @@ footer {
         <div class="score-box">
             <div class="score-top">
                 <span class="score-name">維持しやすさ</span>
-                <span class="score-number">92</span>
+                <span class="score-number">86</span>
             </div>
             <div class="bar"><span style="width:92%"></span></div>
         </div>
@@ -1134,7 +1931,7 @@ footer {
         <div class="score-box">
             <div class="score-top">
                 <span class="score-name">コスパ</span>
-                <span class="score-number">98</span>
+                <span class="score-number">89</span>
             </div>
             <div class="bar"><span style="width:98%"></span></div>
         </div>
@@ -1210,71 +2007,390 @@ footer {
 </section>
 
 
+
 <!-- =========================================================
-     03 CR-Z
-     ========================================================= -->
+     03 ROADSTER
+========================================================= -->
 
 <section class="car">
 
 <div class="container">
 
-    <div class="car-number">03 / HONDA</div>
+    <div class="car-number">03 / MAZDA</div>
 
-    <h2 class="car-title">CR-Z</h2>
+    <h2 class="car-title">ROADSTER</h2>
+
+    <div style="
+    margin: 35px 0 40px;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid var(--line);
+    position: relative;
+">
+
+
+    <img
+        id="roadster-slide"
+        src="https://images.unsplash.com/photo-1643928342307-ff6c85459450?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TUFaREElRTMlODMlQUQlRTMlODMlQkMlRTMlODMlODklRTMlODIlQjklRTMlODIlQkYlRTMlODMlQkN8ZW58MHx8MHx8fDA%3D"
+        alt="MAZDA ROADSTER"
+        loading="lazy"
+
+        style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 1;
+            transition: opacity 0.25s ease-in-out;
+        "
+    >
+
+
+    <!-- 車名表示 -->
+
+    <div
+        id="roadster-name"
+        style="
+            position:absolute;
+            left:20px;
+            bottom:20px;
+            padding:8px 16px;
+            border-radius:8px;
+            background:rgba(0,0,0,0.65);
+            color:#fff;
+            font-size:16px;
+            font-weight:bold;
+            z-index:2;
+        ">
+        MAZDA ROADSTER
+    </div>
+
+
+    <!-- 左矢印 -->
+
+    <button
+        type="button"
+        onclick="changeRoadsterImage(-1)"
+        style="
+            position:absolute;
+            left:15px;
+            top:50%;
+            transform:translateY(-50%);
+            width:45px;
+            height:45px;
+            border-radius:50%;
+            border:1px solid rgba(255,255,255,0.5);
+            background:rgba(0,0,0,0.5);
+            color:#fff;
+            font-size:25px;
+            cursor:pointer;
+            z-index:2;
+        ">
+        ←
+    </button>
+
+
+    <!-- 右矢印 -->
+
+    <button
+        type="button"
+        onclick="changeRoadsterImage(1)"
+        style="
+            position:absolute;
+            right:15px;
+            top:50%;
+            transform:translateY(-50%);
+            width:45px;
+            height:45px;
+            border-radius:50%;
+            border:1px solid rgba(255,255,255,0.5);
+            background:rgba(0,0,0,0.5);
+            color:#fff;
+            font-size:25px;
+            cursor:pointer;
+            z-index:2;
+        ">
+        →
+    </button>
+
+
+    <script>
+
+    const imagesRoadster = [
+
+        "https://images.unsplash.com/photo-1643928342307-ff6c85459450?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TUFaREElRTMlODMlQUQlRTMlODMlQkMlRTMlODMlODklRTMlODIlQjklRTMlODIlQkYlRTMlODMlQkN8ZW58MHx8MHx8fDA%3D",
+        "https://images.unsplash.com/photo-1603739297343-21e40a7e127d?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Uk9BRFNURVIlMjBNQVpEQXxlbnwwfHwwfHx8MA%3D%3D"
+
+    ];
+
+
+    let indexRoadster = 0;
+
+
+    function changeRoadsterImage(direction) {
+
+        const img = document.getElementById("roadster-slide");
+        const name = document.getElementById("roadster-name");
+
+        if (!img || !name) return;
+
+
+        img.style.opacity = 0;
+
+
+        setTimeout(() => {
+
+            indexRoadster += direction;
+
+
+            if (indexRoadster < 0) {
+                indexRoadster = imagesRoadster.length - 1;
+            }
+
+
+            if (indexRoadster >= imagesRoadster.length) {
+                indexRoadster = 0;
+            }
+
+
+            img.src = imagesRoadster[indexRoadster];
+
+            img.alt = "MAZDA ROADSTER";
+
+            name.textContent = "MAZDA ROADSTER";
+
+            img.style.opacity = 1;
+
+        }, 250);
+
+    }
+
+    </script>
+
+</div>
 
     <p class="car-subtitle">
-        ハイブリッドなのに、ちゃんとスポーツ。
+        軽さとFRを武器に、「運転する楽しさ」を追求した王道ライトウェイトスポーツ。
     </p>
 
     <p class="car-intro">
-        1.5L i-VTEC＋IMAを搭載した4人乗りのスポーツハイブリッド。
-        現在は中古車のみだが、燃費とスポーティなデザイン、
-        6MT設定という個性が魅力。
+        ロードスターは、軽量ボディとFRレイアウト、
+        2シーターというスポーツカーの基本をシンプルに楽しめる一台。
+        絶対的なパワーではなく、車体の軽さとハンドリングによって
+        ドライバー自身が運転を楽しめることが大きな魅力。
+        オープンカーならではの開放感も、この車ならではの特徴。
     </p>
 
     <div class="spec-card">
 
-        <div class="spec-title">SPEC</div>
+    <div class="spec-title">SPEC</div>
+
+    <!-- =====================================================
+         SPEC SWITCH
+    ===================================================== -->
+
+    <div class="spec-switch">
+
+        <button
+            type="button"
+            class="active"
+            data-spec="roadster"
+            onclick="switchSpec('roadster')">
+            カタログ値
+        </button>
+
+        <button
+            type="button"
+            data-spec="roadster-real"
+            onclick="switchSpec('roadster-real')">
+            実測参考
+        </button>
+
+    </div>
+
+    <!-- =====================================================
+         ROADSTER カタログ値
+    ===================================================== -->
+
+    <div id="spec-roadster" class="spec-panel active">
 
         <div class="spec-grid">
 
             <div class="spec-item">
                 <small>ENGINE</small>
-                <strong>1.5L i-VTEC＋IMA</strong>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>POWER</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TORQUE</small>
+                <strong></strong>
             </div>
 
             <div class="spec-item">
                 <small>DRIVE</small>
-                <strong>FF</strong>
+                <strong></strong>
             </div>
 
             <div class="spec-item">
                 <small>TRANSMISSION</small>
-                <strong>6MT / CVT</strong>
+                <strong></strong>
             </div>
 
             <div class="spec-item">
                 <small>SEATS</small>
-                <strong>4名</strong>
+                <strong></strong>
             </div>
 
             <div class="spec-item">
                 <small>BODY</small>
-                <strong>約4,105 × 1,740 × 1,395 mm</strong>
+                <strong></strong>
             </div>
 
             <div class="spec-item">
-                <small>STATUS</small>
-                <strong>生産終了・中古車のみ</strong>
+                <small>WEIGHT</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>FUEL</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WLTC（燃費）</small>
+                <strong></strong>
+            </div>
+
+        </div>
+
+        <div class="spec-note">
+            ※メーカー公表値。年式・グレード・トランスミッションなどにより
+            車両重量・燃費等が異なる場合があります。
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         ROADSTER 実測参考値
+    ===================================================== -->
+
+
+    <div id="spec-roadster-real" class="spec-panel">
+
+        <div class="spec-grid">
+
+            <div class="spec-item">
+                <small>ENGINE</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>POWER</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TORQUE</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>DRIVE</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TRANSMISSION</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>SEATS</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>BODY</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WEIGHT</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>FUEL</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WLTC（燃費）</small>
+                <strong></strong>
+            </div>
+
+        </div>
+
+            <div class="spec-note">
+                <strong>実測参考値について</strong><br>
+                実走行データや実車計測例を参考値として掲載しています。
+                実燃費は走行条件、交通状況、気温、タイヤ、運転方法などによって
+                大きく変動します。POWER・TORQUEについても測定機器や測定条件に
+                よって数値が変わるため、特定の実測値を絶対値として扱っていません。
             </div>
 
         </div>
 
     </div>
 
+
+    <!-- =====================================================
+         PRICE
+    ===================================================== -->
+
+
+    <div class="spec-card">
+
+        <div class="spec-title">PRICE / 相場</div>
+
+        <div class="spec-grid">
+
+            <div class="spec-item">
+                <small>NEW CAR PRICE</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>USED CAR MIN</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>USED CAR MAX</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>USED CAR AVERAGE</small>
+                <strong></strong>
+            </div>
+        </div>
+    </div>
+
     <div class="verdict">
+
         <strong>VELORA'S CONCLUSION</strong>
-        「燃費も欲しい。でも普通のコンパクトカーではつまらない」という人に面白い選択肢。
+
+        実用性よりも「運転する楽しさ」を優先できるなら、
+        今でも非常に魅力的なライトウェイトスポーツ。
+        FRとオープンエアを気軽に楽しめることが最大の武器。
+
     </div>
 
     <div class="score-grid">
@@ -1282,23 +2398,411 @@ footer {
         <div class="score-box">
             <div class="score-top">
                 <span class="score-name">スポーツ性能</span>
+                <span class="score-number">83</span>
+            </div>
+            <div class="bar"><span style="width:96%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">外観</span>
+                <span class="score-number">83</span>
+            </div>
+            <div class="bar"><span style="width:45%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">実用性 / 快適性</span>
+                <span class="score-number">77</span>
+            </div>
+            <div class="bar"><span style="width:92%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">維持しやすさ</span>
                 <span class="score-number">78</span>
+            </div>
+            <div class="bar"><span style="width:85%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">コスパ</span>
+                <span class="score-number">86</span>
+            </div>
+            <div class="bar"><span style="width:95%"></span></div>
+        </div>
+
+    </div>
+
+    <div class="content-grid">
+
+        <div class="info-card">
+            <h3>メリット</h3>
+            <p class="pro">軽量FRによる軽快なハンドリング</p>
+            <p class="pro">オープンエアを楽しめる</p>
+            <p class="pro">スポーツカーとして完成度が高い</p>
+        </div>
+
+        <div class="info-card">
+            <h3>デメリット</h3>
+            <p class="con">2人乗り</p>
+            <p class="con">荷物を多く載せるのは苦手</p>
+            <p class="con">快適性や実用性は一般的な乗用車に及ばない</p>
+        </div>
+
+        <div class="info-card">
+            <h3>人気の層</h3>
+            <p>
+                車を単なる移動手段ではなく趣味として楽しみたい人、
+                ワインディングやオープンドライブが好きな人、
+                初めて本格的なFRスポーツに乗りたい人。
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>買って後悔しやすい人</h3>
+            <p>
+                大きな荷物を頻繁に運ぶ人や、
+                4人以上で乗ることが多い人。
+                1台ですべての用途をこなしたい人には不向き。
+            </p>
+        </div>
+    </div>
+
+    <div class="maintenance">
+
+        <h3>🔧 中古車で見るポイント</h3>
+
+        <p>
+            幌やウェザーストリップなどオープンカー特有の部品に加えて、
+            下回り、足回り、クラッチ、ボディの状態を確認。
+            中古車では走行距離だけでなく、これまでの整備状況を重視したい。
+        </p>
+
+    </div>
+
+    <h3 style="margin-top:40px;">🛠 おすすめカスタム</h3>
+
+    <div class="custom-list">
+
+        <div class="custom-item">
+            <strong>① タイヤ</strong>
+            <span>ロードスター本来の軽快さを壊さない選択が重要。</span>
+        </div>
+
+        <div class="custom-item">
+            <strong>② ブレーキ</strong>
+            <span>スポーツ走行をするならパッドやフルードから改善。</span>
+        </div>
+
+        <div class="custom-item">
+            <strong>③ 足回り</strong>
+            <span>車高だけでなく乗り味とボディバランスを重視。</span>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+</section>
+
+<!-- =========================================================
+     04 CR-Z
+========================================================= -->
+
+
+<section class="car">
+
+
+<div class="container">
+
+    <div class="car-number">04 / HONDA</div>
+
+    <h2 class="car-title">CR-Z</h2>
+
+    <div style="
+    margin: 35px 0 40px;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid var(--line);
+    ">
+
+    <img
+        id="crz-slide"
+        src="https://images.unsplash.com/photo-1779808109972-ca6f07c60fe8?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fEhPTkRBJTIwQ1ItWnxlbnwwfHwwfHx8MA%3D%3D"
+        alt="ホンダ CR-Z"
+        loading="lazy"
+
+        style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        ">
+    </div>
+
+    <p class="car-subtitle">
+        ハイブリッドなのに、ちゃんとスポーツ。独自の個性を持つ異色の一台。
+    </p>
+
+    <p class="car-intro">
+        CR-Zは、1.5L i-VTECエンジンとIMAハイブリッドシステムを組み合わせた、
+        4人乗りのスポーツハイブリッド。
+        燃費性能だけを追求した一般的なハイブリッドとは異なり、
+        6MTを選べるスポーティなキャラクターが大きな特徴。
+        現在は中古車が中心となるが、他の車にはない独自性を楽しめる。
+    </p>
+
+    <div class="spec-card">
+
+    <div class="spec-title">SPEC</div>
+
+
+    <!-- =====================================================
+         SPEC SWITCH
+     ===================================================== -->
+
+
+    <div class="spec-switch">
+
+        <button
+            type="button"
+            class="active"
+            data-spec="crz"
+            onclick="switchSpec('crz')">
+            カタログ値
+        </button>
+
+        <button
+            type="button"
+            data-spec="crz-real"
+            onclick="switchSpec('crz-real')">
+            実測参考
+        </button>
+
+    </div>
+
+    <!-- =====================================================
+         CR-Z カタログ値
+    ===================================================== -->
+
+    <div id="spec-crz" class="spec-panel active">
+
+        <div class="spec-grid">
+
+            <div class="spec-item">
+                <small>ENGINE</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>POWER</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TORQUE</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>DRIVE</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TRANSMISSION</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>SEATS</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>BODY</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WEIGHT</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>FUEL</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WLTC（燃費）</small>
+                <strong></strong>
+            </div>
+
+        </div>
+
+        <div class="spec-note">
+            ※メーカー公表値。年式・グレード・トランスミッションなどにより
+            車両重量・燃費等が異なる場合があります。
+        </div>
+
+    </div>
+
+    <!-- =====================================================
+         CR-Z 実測参考値
+    ===================================================== -->
+
+
+    <div id="spec-crz-real" class="spec-panel">
+
+        <div class="spec-grid">
+
+            <div class="spec-item">
+                <small>ENGINE</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>POWER</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TORQUE</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>DRIVE</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TRANSMISSION</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>SEATS</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>BODY</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WEIGHT</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>FUEL</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WLTC（燃費）</small>
+                <strong></strong>
+            </div>
+
+        </div>
+
+            <div class="spec-note">
+            <strong>実測参考値について</strong><br>
+                実走行データや実車計測例を参考値として掲載しています。
+                実燃   費は走行条件、交通状況、気温、タイヤ、運転方法などによって
+                大きく変動します。POWER・TORQUEについても測定機器や測定条件に
+                よって数値が変わるため、特定の実測値を絶対値として扱っていません。
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================================================
+         PRICE
+    ===================================================== -->
+
+
+    <div class="spec-card">
+
+        <div class="spec-title">PRICE / 相場</div>
+
+        <div class="spec-grid">
+
+            <div class="spec-item">
+                <small>NEW CAR PRICE</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>USED CAR MIN</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>USED CAR MAX</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>USED CAR AVERAGE</small>
+                <strong></strong>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="verdict">
+
+        <strong>VELORA'S CONCLUSION</strong>
+
+        燃費性能とスポーティな走りを両立しながら、
+        他のスポーツカーとは違う個性を楽しめる一台。
+        最新車にはない独自の魅力を求めるなら面白い選択肢。
+
+    </div>
+
+    <div class="score-grid">
+
+        <div class="score-box">
+            <div class="score-top">
+                <span class="score-name">スポーツ性能</span>
+                <span class="score-number">72</span>
             </div>
             <div class="bar"><span style="width:78%"></span></div>
         </div>
 
         <div class="score-box">
             <div class="score-top">
-                <span class="score-name">実用性</span>
-                <span class="score-number">82</span>
+                <span class="score-name">外観</span>
+                <span class="score-number">62</span>
             </div>
             <div class="bar"><span style="width:82%"></span></div>
         </div>
 
         <div class="score-box">
             <div class="score-top">
+                <span class="score-name">実用性 / 快適性</span>
+                <span class="score-number">84</span>
+            </div>
+            <div class="bar"><span style="width:92%"></span></div>
+        </div>
+
+        <div class="score-box">
+            <div class="score-top">
                 <span class="score-name">維持しやすさ</span>
-                <span class="score-number">76</span>
+                <span class="score-number">97</span>
             </div>
             <div class="bar"><span style="width:76%"></span></div>
         </div>
@@ -1306,7 +2810,7 @@ footer {
         <div class="score-box">
             <div class="score-top">
                 <span class="score-name">コスパ</span>
-                <span class="score-number">91</span>
+                <span class="score-number">83</span>
             </div>
             <div class="bar"><span style="width:91%"></span></div>
         </div>
@@ -1318,22 +2822,22 @@ footer {
         <div class="info-card">
             <h3>メリット</h3>
             <p class="pro">ハイブリッドによる燃費性能</p>
-            <p class="pro">4人乗りで実用性が高い</p>
-            <p class="pro">6MTという希少性</p>
+            <p class="pro">4人乗りで一定の実用性を確保</p>
+            <p class="pro">6MTを選べる希少性</p>
         </div>
 
         <div class="info-card">
             <h3>デメリット</h3>
-            <p class="con">年式が古くなっている</p>
+            <p class="con">年式が古く経年劣化への注意が必要</p>
             <p class="con">ハイブリッド関連部品の状態確認が重要</p>
-            <p class="con">絶対的な走行性能は現代のFRスポーツに及ばない</p>
+            <p class="con">最新世代のスポーツカーほどの走行性能はない</p>
         </div>
 
         <div class="info-card">
             <h3>人気の層</h3>
             <p>
-                人とは少し違う車に乗りたい人、
-                燃費とスポーツ感を両立したい人、
+                人とは少し違うスポーツカーに乗りたい人、
+                燃費とスポーツ性を両立したい人、
                 中古車をベースに楽しみたい人。
             </p>
         </div>
@@ -1343,17 +2847,21 @@ footer {
             <p>
                 最新の安全装備や最新世代のスポーツ性能を
                 最優先する人には向きにくい。
+                また、年式の古さによる維持管理を避けたい人にも注意が必要。
             </p>
         </div>
 
     </div>
 
     <div class="maintenance">
-        <h3>🔧 中古車で最重要</h3>
+
+        <h3>🔧 中古車で見るポイント</h3>
+
         <p>
-            年式が古いため、価格だけでなく整備履歴を重視。
-            ハイブリッドシステム、12Vバッテリー、足回り、
-            ゴム部品などの経年劣化を確認したい。
+            CR-Zは年式が古くなっているため、走行距離や価格だけで判断せず、
+            整備履歴を確認することが重要。
+            ハイブリッドシステム、12Vバッテリー、足回り、ブッシュ類、
+            ゴム部品などの経年劣化も確認したい。
         </p>
     </div>
 
@@ -1363,189 +2871,17 @@ footer {
 
         <div class="custom-item">
             <strong>① タイヤ</strong>
-            <span>走りと安全性を両立する最優先項目。</span>
+            <span>走りと安全性のバランスを考えて選ぶ。</span>
         </div>
 
         <div class="custom-item">
             <strong>② 足回り</strong>
-            <span>古い車体ほど状態確認を優先。</span>
+            <span>車高よりも車体の状態と乗り味を優先。</span>
         </div>
 
         <div class="custom-item">
-            <strong>③ 補強・シート</strong>
-            <span>運転姿勢とボディ感覚を整える。</span>
-        </div>
-
-    </div>
-
-</div>
-
-</section>
-
-
-<!-- =========================================================
-     04 ROADSTER
-     ========================================================= -->
-
-<section class="car">
-
-<div class="container">
-
-    <div class="car-number">04 / MAZDA</div>
-
-    <h2 class="car-title">ROADSTER</h2>
-
-    <p class="car-subtitle">
-        「運転する楽しさ」を最優先するなら、強烈な存在感。
-    </p>
-
-    <p class="car-intro">
-        軽量・FR・2シーターという、スポーツカーの基本を
-        シンプルに楽しめるロードスター。
-        実用性では不利だが、運転そのものの満足度は非常に高い。
-    </p>
-
-    <div class="spec-card">
-
-        <div class="spec-title">SPEC / 現行ROADSTER</div>
-
-        <div class="spec-grid">
-
-            <div class="spec-item">
-                <small>ENGINE</small>
-                <strong>1.5L SKYACTIV-G</strong>
-            </div>
-
-            <div class="spec-item">
-                <small>DRIVE</small>
-                <strong>FR</strong>
-            </div>
-
-            <div class="spec-item">
-                <small>SEATS</small>
-                <strong>2名</strong>
-            </div>
-
-            <div class="spec-item">
-                <small>BODY</small>
-                <strong>3,915 × 1,735 × 1,235 mm</strong>
-            </div>
-
-            <div class="spec-item">
-                <small>WLTC</small>
-                <strong>16.9〜17.3 km/L</strong>
-            </div>
-
-            <div class="spec-item">
-                <small>NEW PRICE</small>
-                <strong>295.9万円〜</strong>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="verdict">
-        <strong>VELORA'S CONCLUSION</strong>
-        実用性より「運転する楽しさ」を優先できるなら、コスパは非常に高い。
-    </div>
-
-    <div class="score-grid">
-
-        <div class="score-box">
-            <div class="score-top">
-                <span class="score-name">スポーツ性能</span>
-                <span class="score-number">96</span>
-            </div>
-            <div class="bar"><span style="width:96%"></span></div>
-        </div>
-
-        <div class="score-box">
-            <div class="score-top">
-                <span class="score-name">実用性</span>
-                <span class="score-number">45</span>
-            </div>
-            <div class="bar"><span style="width:45%"></span></div>
-        </div>
-
-        <div class="score-box">
-            <div class="score-top">
-                <span class="score-name">快適性</span>
-                <span class="score-number">62</span>
-            </div>
-            <div class="bar"><span style="width:62%"></span></div>
-        </div>
-
-        <div class="score-box">
-            <div class="score-top">
-                <span class="score-name">コスパ</span>
-                <span class="score-number">95</span>
-            </div>
-            <div class="bar"><span style="width:95%"></span></div>
-        </div>
-
-    </div>
-
-    <div class="content-grid">
-
-        <div class="info-card">
-            <h3>メリット</h3>
-            <p class="pro">軽快なFRハンドリング</p>
-            <p class="pro">燃費とスポーツ性のバランス</p>
-            <p class="pro">オープンエアを楽しめる</p>
-        </div>
-
-        <div class="info-card">
-            <h3>デメリット</h3>
-            <p class="con">2人乗り</p>
-            <p class="con">荷物を多く載せるのは苦手</p>
-            <p class="con">長距離では人によって快適性に差が出る</p>
-        </div>
-
-        <div class="info-card">
-            <h3>人気の層</h3>
-            <p>
-                車を「移動手段」ではなく「趣味」として楽しみたい人。
-                ワインディングやオープンドライブが好きな人。
-            </p>
-        </div>
-
-        <div class="info-card">
-            <h3>買って後悔しやすい人</h3>
-            <p>
-                大きな荷物を頻繁に運ぶ人や、
-                4人以上で乗ることが多い人。
-            </p>
-        </div>
-
-    </div>
-
-    <div class="maintenance">
-        <h3>🔧 注意点</h3>
-        <p>
-            幌・ウェザーストリップなどオープンカー特有の部品、
-            下回り、足回り、クラッチなどを中古車では確認。
-            現行車ならグレードによる装備差にも注意。
-        </p>
-    </div>
-
-    <h3 style="margin-top:40px;">🛠 おすすめカスタム</h3>
-
-    <div class="custom-list">
-
-        <div class="custom-item">
-            <strong>① タイヤ</strong>
-            <span>ロードスターの良さを壊さないことが最優先。</span>
-        </div>
-
-        <div class="custom-item">
-            <strong>② ブレーキ</strong>
-            <span>スポーツ走行をするならパッドから。</span>
-        </div>
-
-        <div class="custom-item">
-            <strong>③ 足回り</strong>
-            <span>車高よりも乗り味とボディバランスを重視。</span>
+            <strong>③ シート</strong>
+            <span>運転姿勢を整えてスポーティな操作感を高める。</span>
         </div>
 
     </div>
@@ -1557,7 +2893,8 @@ footer {
 
 <!-- =========================================================
      05 S660
-     ========================================================= -->
+========================================================= -->
+
 
 <section class="car">
 
@@ -1567,50 +2904,239 @@ footer {
 
     <h2 class="car-title">S660</h2>
 
+    <div style="
+    margin: 35px 0 40px;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid var(--line);
+    ">
+
+    <img
+        id="s660-slide"
+        src="https://images.unsplash.com/photo-1683884266580-3db1f71d0ed2?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8JUUzJTgzJTlCJUUzJTgzJUIzJUUzJTgzJTgwczY2MHxlbnwwfHwwfHx8MA%3D%3D"
+        alt="ホンダ S660"
+        loading="lazy"
+
+        style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        ">
+    </div>
+
     <p class="car-subtitle">
-        実用性を捨ててでも、走りを選ぶ人へ。
+        実用性を捨ててでも、走る楽しさを選ぶ人へ。
     </p>
 
     <p class="car-intro">
-        0.66Lターボ、MR、2シーターという非常に個性的な軽スポーツ。
-        2022年に生産終了したため現在は中古車が中心。
-        軽自動車ならではの維持費の軽さも魅力。
+        S660は、0.66Lターボエンジンをミッドシップに搭載した
+        2シーターの軽スポーツ。
+        コンパクトなボディとMRレイアウトによる軽快な運動性能が魅力で、
+        軽自動車でありながら本格的なスポーツカーらしさを味わえる。
+        2022年に生産終了したため、現在は中古車が中心となっている。
     </p>
 
     <div class="spec-card">
 
-        <div class="spec-title">SPEC</div>
+    <div class="spec-title">SPEC</div>
+
+
+    <!-- =====================================================
+         SPEC SWITCH
+    ===================================================== -->
+
+
+    <div class="spec-switch">
+
+        <button
+            type="button"
+            class="active"
+            data-spec="s660"
+            onclick="switchSpec('s660')">
+            カタログ値
+        </button>
+
+        <button
+            type="button"
+            data-spec="s660-real"
+            onclick="switchSpec('s660-real')">
+            実測参考
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         S660 カタログ値
+    ===================================================== -->
+
+
+    <div id="spec-s660" class="spec-panel active">
 
         <div class="spec-grid">
 
             <div class="spec-item">
                 <small>ENGINE</small>
-                <strong>0.66L ターボ</strong>
+                <strong></strong>
             </div>
 
             <div class="spec-item">
                 <small>POWER</small>
-                <strong>64 PS</strong>
+                <strong></strong>
             </div>
 
             <div class="spec-item">
                 <small>TORQUE</small>
-                <strong>104 N・m</strong>
+                <strong></strong>
             </div>
 
             <div class="spec-item">
                 <small>DRIVE</small>
-                <strong>MR</strong>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TRANSMISSION</small>
+                <strong></strong>
             </div>
 
             <div class="spec-item">
                 <small>SEATS</small>
-                <strong>2名</strong>
+                <strong></strong>
             </div>
 
             <div class="spec-item">
-                <small>WLTC</small>
-                <strong>20.0〜20.6 km/L</strong>
+                <small>BODY</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WEIGHT</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>FUEL</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WLTC（燃費）</small>
+                <strong></strong>
+            </div>
+
+        </div>
+
+        <div class="spec-note">
+            ※メーカー公表値。年式・グレード・トランスミッションなどにより
+            車両重量・燃費等が異なる場合があります。
+        </div>
+
+    </div>
+
+    <!-- =====================================================
+         S660 実測参考値
+    ===================================================== -->
+
+
+    <div id="spec-s660-real" class="spec-panel">
+
+        <div class="spec-grid">
+
+            <div class="spec-item">
+                <small>ENGINE</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>POWER</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TORQUE</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>DRIVE</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>TRANSMISSION</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>SEATS</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>BODY</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WEIGHT</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>FUEL</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>WLTC（燃費）</small>
+                <strong></strong>
+            </div>
+
+        </div>
+
+            <div class="spec-note">
+                <strong>実測参考値について</strong><br>
+                実走行データや実車計測例を参考値として掲載しています。
+                 実燃費は走行条件、交通状況、気温、タイヤ、運転方法などによって
+                大きく変動します。POWER・TORQUEについても測定機器や測定条件に
+                よって数値が変わるため、特定の実測値を絶対値として扱っていません。
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================================================
+         PRICE
+    ===================================================== -->
+
+
+    <div class="spec-card">
+
+        <div class="spec-title">PRICE / 相場</div>
+
+        <div class="spec-grid">
+
+            <div class="spec-item">
+                <small>NEW CAR PRICE</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>USED CAR MIN</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>USED CAR MAX</small>
+                <strong></strong>
+            </div>
+
+            <div class="spec-item">
+                <small>USED CAR AVERAGE</small>
+                <strong></strong>
             </div>
 
         </div>
@@ -1618,8 +3144,13 @@ footer {
     </div>
 
     <div class="verdict">
+
         <strong>VELORA'S CONCLUSION</strong>
-        実用性より「唯一無二の楽しさ」を選ぶなら、今でも魅力的。
+
+        実用性よりも「唯一無二の楽しさ」を選ぶなら、
+        生産終了後の現在でも非常に魅力的な軽スポーツ。
+        MRレイアウトとコンパクトな車体による独特の走りが最大の魅力。
+
     </div>
 
     <div class="score-grid">
@@ -1627,31 +3158,40 @@ footer {
         <div class="score-box">
             <div class="score-top">
                 <span class="score-name">スポーツ性能</span>
-                <span class="score-number">91</span>
+                <span class="score-number">77</span>
             </div>
             <div class="bar"><span style="width:91%"></span></div>
         </div>
 
         <div class="score-box">
             <div class="score-top">
-                <span class="score-name">実用性</span>
-                <span class="score-number">30</span>
+                <span class="score-name">外観</span>
+                <span class="score-number">81</span>
             </div>
             <div class="bar"><span style="width:30%"></span></div>
         </div>
 
         <div class="score-box">
             <div class="score-top">
-                <span class="score-name">維持しやすさ</span>
-                <span class="score-number">89</span>
+                <span class="score-name">実用性 / 快適性</span>
+                <span class="score-number">72</span>
             </div>
-            <div class="bar"><span style="width:89%"></span></div>
+            <div class="bar"><span style="width:92%"></span></div>
         </div>
 
         <div class="score-box">
             <div class="score-top">
+                <span class="score-name">維持しやすさ</span>
+                <span class="score-number">94</span>
+            </div>
+            <div class="bar"><span style="width:89%"></span></div>
+        </div>
+
+
+        <div class="score-box">
+            <div class="score-top">
                 <span class="score-name">コスパ</span>
-                <span class="score-number">90</span>
+                <span class="score-number">83</span>
             </div>
             <div class="bar"><span style="width:90%"></span></div>
         </div>
@@ -1664,14 +3204,14 @@ footer {
             <h3>メリット</h3>
             <p class="pro">軽自動車なので維持費を抑えやすい</p>
             <p class="pro">MR＋2シーターという独自性</p>
-            <p class="pro">小さなボディによる軽快さ</p>
+            <p class="pro">コンパクトな車体による軽快な走り</p>
         </div>
 
         <div class="info-card">
             <h3>デメリット</h3>
             <p class="con">2人乗り</p>
             <p class="con">荷物をほとんど載せられない</p>
-            <p class="con">長距離・高速道路では快適性に限界</p>
+            <p class="con">長距離や高速道路では快適性に限界がある</p>
         </div>
 
         <div class="info-card">
@@ -1679,7 +3219,7 @@ footer {
             <p>
                 2台目の趣味車を探している人、
                 軽スポーツが好きな人、
-                小さな車で運転を楽しみたい人。
+                小さな車で運転そのものを楽しみたい人。
             </p>
         </div>
 
@@ -1688,18 +3228,23 @@ footer {
             <p>
                 1台で買い物・旅行・家族移動まで
                 すべてこなしたい人。
+                実用性を最優先する場合には向きにくい。
             </p>
         </div>
 
     </div>
 
     <div class="maintenance">
+
         <h3>🔧 中古車で見るポイント</h3>
+
         <p>
-            走行距離だけで判断せず、オイル交換などの整備履歴、
-            ターボ周辺、足回り、幌、ボディ下部などを確認。
-            生産終了車なので状態の良い個体を探すことが重要。
+            生産終了車のため、価格や走行距離だけでなく車両状態を重視。
+            オイル交換などの整備履歴、ターボ周辺、足回り、
+            幌、ボディ下部などを確認したい。
+            特にスポーツ走行歴の有無や修復歴についても確認しておきたい。
         </p>
+
     </div>
 
     <h3 style="margin-top:40px;">🛠 おすすめカスタム</h3>
@@ -1708,29 +3253,30 @@ footer {
 
         <div class="custom-item">
             <strong>① タイヤ</strong>
-            <span>小さな車だからこそタイヤの影響が大きい。</span>
+            <span>小さな車体だからこそタイヤによる変化が大きい。</span>
         </div>
 
         <div class="custom-item">
             <strong>② ブレーキ</strong>
-            <span>パッド・フルードから改善。</span>
+            <span>スポーツ走行をするならパッドやフルードから改善。</span>
         </div>
 
         <div class="custom-item">
             <strong>③ シート</strong>
-            <span>ドライビングポジションを整える。</span>
+            <span>ドライビングポジションを整えて操作性を高める。</span>
         </div>
 
     </div>
 
 </div>
 
+
 </section>
 
 
 <!-- =========================================================
      BUYER CHECKLIST
-     ========================================================= -->
+========================================================= -->
 
 <section class="checklist">
 
@@ -1812,6 +3358,21 @@ footer {
 
 </section>
 
+<section class="container" style="padding:60px 0;">
+    <div class="info-card">
+        <h3>記事について</h3>
+        <p>
+            本記事の車両スペック・燃費・価格などの情報は、
+            公開時点で確認できるメーカー公式情報などをもとに掲載しています。
+            年式・グレード・仕様変更などによって数値や装備が異なる場合があります。
+        </p>
+
+        <p style="margin-top:15px;">
+            VELORAの評価点は独自基準による編集部評価であり、
+            メーカーや販売店による公式評価ではありません。
+        </p>
+    </div>
+</section>
 
 <footer>
 
